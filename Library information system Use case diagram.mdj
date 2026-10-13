@@ -1,0 +1,167 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Library Management System Use Case",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLUseCaseDiagram",
+          "_id": "UCDiagram-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Library Management System",
+          "ownedViews": [
+            {
+              "_type": "UMLSubsystemView", "_id": "View-SYS", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "SYS" }, "left": 150, "top": 40, "width": 720, "height": 850
+            },
+            {
+              "_type": "UMLActorView", "_id": "View-A1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "A1" }, "left": 50, "top": 320, "width": 50, "height": 80, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true
+            },
+            {
+              "_type": "UMLActorView", "_id": "View-A2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "A2" }, "left": 900, "top": 200, "width": 50, "height": 80, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true
+            },
+            {
+              "_type": "UMLActorView", "_id": "View-A3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "A3" }, "left": 900, "top": 680, "width": 50, "height": 80, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true
+            },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S1" }, "left": 190, "top": 80, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S2" }, "left": 190, "top": 130, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S3" }, "left": 190, "top": 180, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S4" }, "left": 190, "top": 230, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S5", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S5" }, "left": 190, "top": 280, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S6", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S6" }, "left": 190, "top": 330, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S7", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S7" }, "left": 190, "top": 380, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S8", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S8" }, "left": 190, "top": 430, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S9", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S9" }, "left": 190, "top": 480, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-S10", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-S10" }, "left": 190, "top": 530, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            
+            { "_type": "UMLUseCaseView", "_id": "View-UC-I1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-I1" }, "left": 420, "top": 255, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-I2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-I2" }, "left": 420, "top": 480, "width": 160, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L1" }, "left": 660, "top": 80, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L2" }, "left": 660, "top": 130, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L3" }, "left": 660, "top": 180, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L4" }, "left": 660, "top": 230, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L5", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L5" }, "left": 660, "top": 280, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L6", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L6" }, "left": 660, "top": 330, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L7", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L7" }, "left": 660, "top": 380, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L8", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L8" }, "left": 660, "top": 430, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-L9", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-L9" }, "left": 660, "top": 480, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+
+            { "_type": "UMLUseCaseView", "_id": "View-UC-A1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-A1" }, "left": 660, "top": 600, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-A2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-A2" }, "left": 660, "top": 650, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-A3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-A3" }, "left": 660, "top": 700, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+            { "_type": "UMLUseCaseView", "_id": "View-UC-A4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "UC-A4" }, "left": 660, "top": 750, "width": 170, "height": 35, "suppressAttributes": true, "suppressOperations": true, "suppressReceptions": true, "suppressExtensionPoints": true },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S1" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S1" }, "lineStyle": 1, "points": "100:360;190:97" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S2" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S2" }, "lineStyle": 1, "points": "100:360;190:147" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S3" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S3" }, "lineStyle": 1, "points": "100:360;190:197" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S4" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S4" }, "lineStyle": 1, "points": "100:360;190:247" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S5", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S5" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S5" }, "lineStyle": 1, "points": "100:360;190:297" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S6", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S6" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S6" }, "lineStyle": 1, "points": "100:360;190:347" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S7", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S7" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S7" }, "lineStyle": 1, "points": "100:360;190:397" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S8", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S8" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S8" }, "lineStyle": 1, "points": "100:360;190:447" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S9", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S9" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S9" }, "lineStyle": 1, "points": "100:360;190:497" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-S10", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-S10" }, "tail": { "$ref": "View-A1" }, "head": { "$ref": "View-UC-S10" }, "lineStyle": 1, "points": "100:360;190:547" },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L1" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L1" }, "lineStyle": 1, "points": "900:240;830:97" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L2" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L2" }, "lineStyle": 1, "points": "900:240;830:147" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L3" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L3" }, "lineStyle": 1, "points": "900:240;830:197" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L4" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L4" }, "lineStyle": 1, "points": "900:240;830:247" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L5", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L5" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L5" }, "lineStyle": 1, "points": "900:240;830:297" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L6", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L6" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L6" }, "lineStyle": 1, "points": "900:240;830:347" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L7", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L7" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L7" }, "lineStyle": 1, "points": "900:240;830:397" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L8", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L8" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L8" }, "lineStyle": 1, "points": "900:240;830:447" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-L9", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-L9" }, "tail": { "$ref": "View-A2" }, "head": { "$ref": "View-UC-L9" }, "lineStyle": 1, "points": "900:240;830:497" },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-A1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-A1" }, "tail": { "$ref": "View-A3" }, "head": { "$ref": "View-UC-A1" }, "lineStyle": 1, "points": "900:720;830:617" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-A2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-A2" }, "tail": { "$ref": "View-A3" }, "head": { "$ref": "View-UC-A2" }, "lineStyle": 1, "points": "900:720;830:667" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-A3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-A3" }, "tail": { "$ref": "View-A3" }, "head": { "$ref": "View-UC-A3" }, "lineStyle": 1, "points": "900:720;830:717" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-A4", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Assoc-A4" }, "tail": { "$ref": "View-A3" }, "head": { "$ref": "View-UC-A4" }, "lineStyle": 1, "points": "900:720;830:767" },
+
+            { "_type": "UMLIncludeView", "_id": "View-Inc-1", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Inc-1" }, "tail": { "$ref": "View-UC-S4" }, "head": { "$ref": "View-UC-I1" }, "lineStyle": 1, "points": "350:247;420:272" },
+            { "_type": "UMLIncludeView", "_id": "View-Inc-2", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Inc-2" }, "tail": { "$ref": "View-UC-S5" }, "head": { "$ref": "View-UC-I1" }, "lineStyle": 1, "points": "350:297;420:272" },
+            { "_type": "UMLIncludeView", "_id": "View-Inc-3", "_parent": { "$ref": "UCDiagram-1" }, "model": { "$ref": "Inc-3" }, "tail": { "$ref": "View-UC-S9" }, "head": { "$ref": "View-UC-I2" }, "lineStyle": 1, "points": "350:497;420:497" }
+          ]
+        },
+        {
+          "_type": "UMLActor", "_id": "A1", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Student / Member",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-S1", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S1", "_parent": { "$ref": "Assoc-S1" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S1", "_parent": { "$ref": "Assoc-S1" }, "reference": { "$ref": "UC-S1" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S2", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S2", "_parent": { "$ref": "Assoc-S2" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S2", "_parent": { "$ref": "Assoc-S2" }, "reference": { "$ref": "UC-S2" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S3", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S3", "_parent": { "$ref": "Assoc-S3" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S3", "_parent": { "$ref": "Assoc-S3" }, "reference": { "$ref": "UC-S3" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S4", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S4", "_parent": { "$ref": "Assoc-S4" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S4", "_parent": { "$ref": "Assoc-S4" }, "reference": { "$ref": "UC-S4" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S5", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S5", "_parent": { "$ref": "Assoc-S5" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S5", "_parent": { "$ref": "Assoc-S5" }, "reference": { "$ref": "UC-S5" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S6", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S6", "_parent": { "$ref": "Assoc-S6" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S6", "_parent": { "$ref": "Assoc-S6" }, "reference": { "$ref": "UC-S6" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S7", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S7", "_parent": { "$ref": "Assoc-S7" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S7", "_parent": { "$ref": "Assoc-S7" }, "reference": { "$ref": "UC-S7" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S8", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S8", "_parent": { "$ref": "Assoc-S8" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S8", "_parent": { "$ref": "Assoc-S8" }, "reference": { "$ref": "UC-S8" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S9", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S9", "_parent": { "$ref": "Assoc-S9" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S9", "_parent": { "$ref": "Assoc-S9" }, "reference": { "$ref": "UC-S9" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-S10", "_parent": { "$ref": "A1" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-S10", "_parent": { "$ref": "Assoc-S10" }, "reference": { "$ref": "A1" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-S10", "_parent": { "$ref": "Assoc-S10" }, "reference": { "$ref": "UC-S10" } } }
+          ]
+        },
+        {
+          "_type": "UMLActor", "_id": "A2", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Librarian",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-L1", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L1", "_parent": { "$ref": "Assoc-L1" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L1", "_parent": { "$ref": "Assoc-L1" }, "reference": { "$ref": "UC-L1" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L2", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L2", "_parent": { "$ref": "Assoc-L2" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L2", "_parent": { "$ref": "Assoc-L2" }, "reference": { "$ref": "UC-L2" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L3", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L3", "_parent": { "$ref": "Assoc-L3" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L3", "_parent": { "$ref": "Assoc-L3" }, "reference": { "$ref": "UC-L3" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L4", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L4", "_parent": { "$ref": "Assoc-L4" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L4", "_parent": { "$ref": "Assoc-L4" }, "reference": { "$ref": "UC-L4" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L5", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L5", "_parent": { "$ref": "Assoc-L5" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L5", "_parent": { "$ref": "Assoc-L5" }, "reference": { "$ref": "UC-L5" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L6", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L6", "_parent": { "$ref": "Assoc-L6" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L6", "_parent": { "$ref": "Assoc-L6" }, "reference": { "$ref": "UC-L6" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L7", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L7", "_parent": { "$ref": "Assoc-L7" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L7", "_parent": { "$ref": "Assoc-L7" }, "reference": { "$ref": "UC-L7" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L8", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L8", "_parent": { "$ref": "Assoc-L8" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L8", "_parent": { "$ref": "Assoc-L8" }, "reference": { "$ref": "UC-L8" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-L9", "_parent": { "$ref": "A2" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-L9", "_parent": { "$ref": "Assoc-L9" }, "reference": { "$ref": "A2" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-L9", "_parent": { "$ref": "Assoc-L9" }, "reference": { "$ref": "UC-L9" } } }
+          ]
+        },
+        {
+          "_type": "UMLActor", "_id": "A3", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Administrator",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-A1", "_parent": { "$ref": "A3" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-A1", "_parent": { "$ref": "Assoc-A1" }, "reference": { "$ref": "A3" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-A1", "_parent": { "$ref": "Assoc-A1" }, "reference": { "$ref": "UC-A1" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-A2", "_parent": { "$ref": "A3" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-A2", "_parent": { "$ref": "Assoc-A2" }, "reference": { "$ref": "A3" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-A2", "_parent": { "$ref": "Assoc-A2" }, "reference": { "$ref": "UC-A2" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-A3", "_parent": { "$ref": "A3" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-A3", "_parent": { "$ref": "Assoc-A3" }, "reference": { "$ref": "A3" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-A3", "_parent": { "$ref": "Assoc-A3" }, "reference": { "$ref": "UC-A3" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-A4", "_parent": { "$ref": "A3" }, "end1": { "_type": "UMLAssociationEnd", "_id": "End1-A4", "_parent": { "$ref": "Assoc-A4" }, "reference": { "$ref": "A3" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "End2-A4", "_parent": { "$ref": "Assoc-A4" }, "reference": { "$ref": "UC-A4" } } }
+          ]
+        },
+        {
+          "_type": "UMLSubsystem",
+          "_id": "SYS",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Library Management System",
+          "ownedElements": [
+            { "_type": "UMLUseCase", "_id": "UC-S1", "_parent": { "$ref": "SYS" }, "name": "Login" },
+            { "_type": "UMLUseCase", "_id": "UC-S2", "_parent": { "$ref": "SYS" }, "name": "Search Books" },
+            { "_type": "UMLUseCase", "_id": "UC-S3", "_parent": { "$ref": "SYS" }, "name": "View Book Details" },
+            { "_type": "UMLUseCase", "_id": "UC-S4", "_parent": { "$ref": "SYS" }, "name": "Borrow Book", "ownedElements": [ { "_type": "UMLInclude", "_id": "Inc-1", "_parent": { "$ref": "UC-S4" }, "source": { "$ref": "UC-S4" }, "target": { "$ref": "UC-I1" } } ] },
+            { "_type": "UMLUseCase", "_id": "UC-S5", "_parent": { "$ref": "SYS" }, "name": "Return Book", "ownedElements": [ { "_type": "UMLInclude", "_id": "Inc-2", "_parent": { "$ref": "UC-S5" }, "source": { "$ref": "UC-S5" }, "target": { "$ref": "UC-I1" } } ] },
+            { "_type": "UMLUseCase", "_id": "UC-S6", "_parent": { "$ref": "SYS" }, "name": "Renew Book" },
+            { "_type": "UMLUseCase", "_id": "UC-S7", "_parent": { "$ref": "SYS" }, "name": "Reserve Book" },
+            { "_type": "UMLUseCase", "_id": "UC-S8", "_parent": { "$ref": "SYS" }, "name": "View Fines" },
+            { "_type": "UMLUseCase", "_id": "UC-S9", "_parent": { "$ref": "SYS" }, "name": "Pay Fine", "ownedElements": [ { "_type": "UMLInclude", "_id": "Inc-3", "_parent": { "$ref": "UC-S9" }, "source": { "$ref": "UC-S9" }, "target": { "$ref": "UC-I2" } } ] },
+            { "_type": "UMLUseCase", "_id": "UC-S10", "_parent": { "$ref": "SYS" }, "name": "View Borrowing History" },
+            
+            { "_type": "UMLUseCase", "_id": "UC-I1", "_parent": { "$ref": "SYS" }, "name": "Check Book Availability" },
+            { "_type": "UMLUseCase", "_id": "UC-I2", "_parent": { "$ref": "SYS" }, "name": "Process Payment" },
+
+            { "_type": "UMLUseCase", "_id": "UC-L1", "_parent": { "$ref": "SYS" }, "name": "Login" },
+            { "_type": "UMLUseCase", "_id": "UC-L2", "_parent": { "$ref": "SYS" }, "name": "Add New Book" },
+            { "_type": "UMLUseCase", "_id": "UC-L3", "_parent": { "$ref": "SYS" }, "name": "Update Book Details" },
+            { "_type": "UMLUseCase", "_id": "UC-L4", "_parent": { "$ref": "SYS" }, "name": "Remove Book" },
+            { "_type": "UMLUseCase", "_id": "UC-L5", "_parent": { "$ref": "SYS" }, "name": "Manage Members" },
+            { "_type": "UMLUseCase", "_id": "UC-L6", "_parent": { "$ref": "SYS" }, "name": "Issue Book" },
+            { "_type": "UMLUseCase", "_id": "UC-L7", "_parent": { "$ref": "SYS" }, "name": "Receive Book" },
+            { "_type": "UMLUseCase", "_id": "UC-L8", "_parent": { "$ref": "SYS" }, "name": "Manage Fines" },
+            { "_type": "UMLUseCase", "_id": "UC-L9", "_parent": { "$ref": "SYS" }, "name": "Generate Reports" },
+
+            { "_type": "UMLUseCase", "_id": "UC-A1", "_parent": { "$ref": "SYS" }, "name": "Login" },
+            { "_type": "UMLUseCase", "_id": "UC-A2", "_parent": { "$ref": "SYS" }, "name": "Manage User Accounts" },
+            { "_type": "UMLUseCase", "_id": "UC-A3", "_parent": { "$ref": "SYS" }, "name": "Manage System Settings" },
+            { "_type": "UMLUseCase", "_id": "UC-A4", "_parent": { "$ref": "SYS" }, "name": "View System Reports" }
+          ]
+        }
+      ]
+    }
+  ]
+}

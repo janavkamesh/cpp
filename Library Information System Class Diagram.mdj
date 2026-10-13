@@ -1,0 +1,135 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Library Information System Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "ClassDiagram-Lib",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Library Information System - UML Class Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView", "_id": "View-Library", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Library" }, "left": 400, "top": 50, "width": 220, "height": 120
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Librarian", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Librarian" }, "left": 50, "top": 250, "width": 250, "height": 120
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Member", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Member" }, "left": 350, "top": 250, "width": 220, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Book", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Book" }, "left": 650, "top": 250, "width": 220, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Loan", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Loan" }, "left": 250, "top": 500, "width": 200, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Reservation", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "C-Reservation" }, "left": 550, "top": 500, "width": 200, "height": 120
+            },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Lib-Mem", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Lib-Mem" }, "tail": { "$ref": "View-Library" }, "head": { "$ref": "View-Member" }, "lineStyle": 2, "points": "460:170;460:250" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Lib-Book", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Lib-Book" }, "tail": { "$ref": "View-Library" }, "head": { "$ref": "View-Book" }, "lineStyle": 2, "points": "560:170;560:200;760:200;760:250" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Librarian-Loan", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Librarian-Loan" }, "tail": { "$ref": "View-Librarian" }, "head": { "$ref": "View-Loan" }, "lineStyle": 2, "points": "175:370;175:450;300:450;300:500" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Mem-Loan", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Mem-Loan" }, "tail": { "$ref": "View-Member" }, "head": { "$ref": "View-Loan" }, "lineStyle": 2, "points": "400:400;400:500" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Mem-Res", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Mem-Res" }, "tail": { "$ref": "View-Member" }, "head": { "$ref": "View-Reservation" }, "lineStyle": 2, "points": "500:400;500:450;600:450;600:500" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Res-Book", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Res-Book" }, "tail": { "$ref": "View-Reservation" }, "head": { "$ref": "View-Book" }, "lineStyle": 2, "points": "700:500;700:400" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Loan-Book", "_parent": { "$ref": "ClassDiagram-Lib" }, "model": { "$ref": "Assoc-Loan-Book" }, "tail": { "$ref": "View-Loan" }, "head": { "$ref": "View-Book" }, "lineStyle": 2, "points": "380:500;380:450;800:450;800:400" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Library", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Library",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Lib-Mem", "_parent": { "$ref": "C-Library" }, "name": "registers", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-LM", "_parent": { "$ref": "Assoc-Lib-Mem" }, "reference": { "$ref": "C-Library" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-LM", "_parent": { "$ref": "Assoc-Lib-Mem" }, "reference": { "$ref": "C-Member" }, "multiplicity": "1..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Lib-Book", "_parent": { "$ref": "C-Library" }, "name": "contains", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-LB", "_parent": { "$ref": "Assoc-Lib-Book" }, "reference": { "$ref": "C-Library" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-LB", "_parent": { "$ref": "Assoc-Lib-Book" }, "reference": { "$ref": "C-Book" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-L1", "_parent": { "$ref": "C-Library" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-L2", "_parent": { "$ref": "C-Library" }, "name": "address", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-L1", "_parent": { "$ref": "C-Library" }, "name": "addBook", "parameters": [{ "_type": "UMLParameter", "_id": "P-L1", "name": "book" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-L2", "_parent": { "$ref": "C-Library" }, "name": "removeBook", "parameters": [{ "_type": "UMLParameter", "_id": "P-L2", "name": "bookId" }], "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Librarian", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Librarian",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Librarian-Loan", "_parent": { "$ref": "C-Librarian" }, "name": "issues", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-LL", "_parent": { "$ref": "Assoc-Librarian-Loan" }, "reference": { "$ref": "C-Librarian" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-LL", "_parent": { "$ref": "Assoc-Librarian-Loan" }, "reference": { "$ref": "C-Loan" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Ln1", "_parent": { "$ref": "C-Librarian" }, "name": "staffId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Ln2", "_parent": { "$ref": "C-Librarian" }, "name": "name", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Ln1", "_parent": { "$ref": "C-Librarian" }, "name": "issueLoan", "parameters": [{ "_type": "UMLParameter", "_id": "P-Ln1", "name": "member" }, { "_type": "UMLParameter", "_id": "P-Ln2", "name": "book" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Ln2", "_parent": { "$ref": "C-Librarian" }, "name": "registerMember", "parameters": [{ "_type": "UMLParameter", "_id": "P-Ln3", "name": "member" }], "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Member", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Member",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Mem-Loan", "_parent": { "$ref": "C-Member" }, "name": "borrows", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-ML", "_parent": { "$ref": "Assoc-Mem-Loan" }, "reference": { "$ref": "C-Member" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-ML", "_parent": { "$ref": "Assoc-Mem-Loan" }, "reference": { "$ref": "C-Loan" }, "multiplicity": "1..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Mem-Res", "_parent": { "$ref": "C-Member" }, "name": "places", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-MR", "_parent": { "$ref": "Assoc-Mem-Res" }, "reference": { "$ref": "C-Member" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-MR", "_parent": { "$ref": "Assoc-Mem-Res" }, "reference": { "$ref": "C-Reservation" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-M1", "_parent": { "$ref": "C-Member" }, "name": "memberId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-M2", "_parent": { "$ref": "C-Member" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-M3", "_parent": { "$ref": "C-Member" }, "name": "email", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-M1", "_parent": { "$ref": "C-Member" }, "name": "borrowBook", "parameters": [{ "_type": "UMLParameter", "_id": "P-M1", "name": "book" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-M2", "_parent": { "$ref": "C-Member" }, "name": "returnBook", "parameters": [{ "_type": "UMLParameter", "_id": "P-M2", "name": "book" }], "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Book", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Book",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-B1", "_parent": { "$ref": "C-Book" }, "name": "isbn", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-B2", "_parent": { "$ref": "C-Book" }, "name": "title", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-B3", "_parent": { "$ref": "C-Book" }, "name": "author", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-B4", "_parent": { "$ref": "C-Book" }, "name": "isAvailable", "type": "Boolean", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-B1", "_parent": { "$ref": "C-Book" }, "name": "checkAvailability", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Loan", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Loan",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Loan-Book", "_parent": { "$ref": "C-Loan" }, "name": "refers to", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-LoB", "_parent": { "$ref": "Assoc-Loan-Book" }, "reference": { "$ref": "C-Loan" }, "multiplicity": "1..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-LoB", "_parent": { "$ref": "Assoc-Loan-Book" }, "reference": { "$ref": "C-Book" }, "multiplicity": "1" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Lo1", "_parent": { "$ref": "C-Loan" }, "name": "loanId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Lo2", "_parent": { "$ref": "C-Loan" }, "name": "issueDate", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Lo3", "_parent": { "$ref": "C-Loan" }, "name": "dueDate", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Lo4", "_parent": { "$ref": "C-Loan" }, "name": "returnDate", "type": "Date", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Lo1", "_parent": { "$ref": "C-Loan" }, "name": "calculateFine", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Reservation", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Reservation",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Res-Book", "_parent": { "$ref": "C-Reservation" }, "name": "reserves", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-RB", "_parent": { "$ref": "Assoc-Res-Book" }, "reference": { "$ref": "C-Reservation" }, "multiplicity": "1..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-RB", "_parent": { "$ref": "Assoc-Res-Book" }, "reference": { "$ref": "C-Book" }, "multiplicity": "1" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-R1", "_parent": { "$ref": "C-Reservation" }, "name": "reservationId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-R2", "_parent": { "$ref": "C-Reservation" }, "name": "reservedDate", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-R3", "_parent": { "$ref": "C-Reservation" }, "name": "status", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-R1", "_parent": { "$ref": "C-Reservation" }, "name": "cancel", "visibility": "public" }
+          ]
+        }
+      ]
+    }
+  ]
+}

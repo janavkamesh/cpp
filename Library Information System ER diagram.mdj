@@ -1,0 +1,188 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Library Information System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "ERDDataModel",
+          "_id": "ERDDataModel-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Model",
+          "ownedElements": [
+            {
+              "_type": "ERDDiagram",
+              "_id": "ERDDiagram-1",
+              "_parent": { "$ref": "ERDDataModel-1" },
+              "name": "Library Information System - ER Diagram",
+              "ownedViews": [
+                {
+                  "_type": "ERDEntityView", "_id": "View-MEMBER", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-MEMBER" }, "left": 50, "top": 50, "width": 210, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-BOOK_ISSUE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-BOOK_ISSUE" }, "left": 350, "top": 50, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-BOOK", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-BOOK" }, "left": 620, "top": 50, "width": 200, "height": 210
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-CATEGORY", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-CATEGORY" }, "left": 910, "top": 50, "width": 180, "height": 100
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-FINE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-FINE" }, "left": 50, "top": 320, "width": 180, "height": 160
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-LIBRARIAN", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-LIBRARIAN" }, "left": 350, "top": 320, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-BOOK_COPY", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-BOOK_COPY" }, "left": 620, "top": 320, "width": 220, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-SUPPLIER", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-SUPPLIER" }, "left": 910, "top": 320, "width": 180, "height": 150
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Member-Issue", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Member-Issue" }, "tail": { "$ref": "View-MEMBER" }, "head": { "$ref": "View-BOOK_ISSUE" }, "points": "260:130;350:130"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Member-Fine", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Member-Fine" }, "tail": { "$ref": "View-MEMBER" }, "head": { "$ref": "View-FINE" }, "points": "140:230;140:320"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Book-Issue", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Book-Issue" }, "tail": { "$ref": "View-BOOK" }, "head": { "$ref": "View-BOOK_ISSUE" }, "points": "620:130;530:130"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Category-Book", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Category-Book" }, "tail": { "$ref": "View-CATEGORY" }, "head": { "$ref": "View-BOOK" }, "points": "910:100;820:100"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Librarian-Issue", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Librarian-Issue" }, "tail": { "$ref": "View-LIBRARIAN" }, "head": { "$ref": "View-BOOK_ISSUE" }, "points": "440:320;440:230"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Book-Copy", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Book-Copy" }, "tail": { "$ref": "View-BOOK" }, "head": { "$ref": "View-BOOK_COPY" }, "points": "720:260;720:320"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Supplier-Copy", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Supplier-Copy" }, "tail": { "$ref": "View-SUPPLIER" }, "head": { "$ref": "View-BOOK_COPY" }, "points": "910:385;840:385"
+                }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-MEMBER", "_parent": { "$ref": "ERDDataModel-1" }, "name": "MEMBER",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Member-Issue", "_parent": { "$ref": "Ent-MEMBER" }, "name": "borrows", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-1", "_parent": { "$ref": "Rel-Member-Issue" }, "reference": { "$ref": "Ent-MEMBER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-2", "_parent": { "$ref": "Rel-Member-Issue" }, "reference": { "$ref": "Ent-BOOK_ISSUE" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Member-Fine", "_parent": { "$ref": "Ent-MEMBER" }, "name": "makes", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-3", "_parent": { "$ref": "Rel-Member-Fine" }, "reference": { "$ref": "Ent-MEMBER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-4", "_parent": { "$ref": "Rel-Member-Fine" }, "reference": { "$ref": "Ent-FINE" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Mem-1", "_parent": { "$ref": "Ent-MEMBER" }, "name": "MemberID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Mem-2", "_parent": { "$ref": "Ent-MEMBER" }, "name": "Name" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-3", "_parent": { "$ref": "Ent-MEMBER" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-4", "_parent": { "$ref": "Ent-MEMBER" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-5", "_parent": { "$ref": "Ent-MEMBER" }, "name": "Address" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-6", "_parent": { "$ref": "Ent-MEMBER" }, "name": "MemberType (Student/Faculty)" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-7", "_parent": { "$ref": "Ent-MEMBER" }, "name": "DateOfJoin" },
+                { "_type": "ERDColumn", "_id": "Col-Mem-8", "_parent": { "$ref": "Ent-MEMBER" }, "name": "Status" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-BOOK_ISSUE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "BOOK_ISSUE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Issue-1", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "IssueID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Issue-2", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "IssueDate" },
+                { "_type": "ERDColumn", "_id": "Col-Issue-3", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "DueDate" },
+                { "_type": "ERDColumn", "_id": "Col-Issue-4", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "ReturnDate" },
+                { "_type": "ERDColumn", "_id": "Col-Issue-5", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "FineAmount" },
+                { "_type": "ERDColumn", "_id": "Col-Issue-6", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "MemberID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Issue-7", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "BookID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Issue-8", "_parent": { "$ref": "Ent-BOOK_ISSUE" }, "name": "IssuedBy", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-BOOK", "_parent": { "$ref": "ERDDataModel-1" }, "name": "BOOK",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Book-Issue", "_parent": { "$ref": "Ent-BOOK" }, "name": "issued for", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-5", "_parent": { "$ref": "Rel-Book-Issue" }, "reference": { "$ref": "Ent-BOOK" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-6", "_parent": { "$ref": "Rel-Book-Issue" }, "reference": { "$ref": "Ent-BOOK_ISSUE" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Book-Copy", "_parent": { "$ref": "Ent-BOOK" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-7", "_parent": { "$ref": "Rel-Book-Copy" }, "reference": { "$ref": "Ent-BOOK" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-8", "_parent": { "$ref": "Rel-Book-Copy" }, "reference": { "$ref": "Ent-BOOK_COPY" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Book-1", "_parent": { "$ref": "Ent-BOOK" }, "name": "BookID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-2", "_parent": { "$ref": "Ent-BOOK" }, "name": "ISBN" },
+                { "_type": "ERDColumn", "_id": "Col-Book-3", "_parent": { "$ref": "Ent-BOOK" }, "name": "Title" },
+                { "_type": "ERDColumn", "_id": "Col-Book-4", "_parent": { "$ref": "Ent-BOOK" }, "name": "Author" },
+                { "_type": "ERDColumn", "_id": "Col-Book-5", "_parent": { "$ref": "Ent-BOOK" }, "name": "Publisher" },
+                { "_type": "ERDColumn", "_id": "Col-Book-6", "_parent": { "$ref": "Ent-BOOK" }, "name": "PublicationYear" },
+                { "_type": "ERDColumn", "_id": "Col-Book-7", "_parent": { "$ref": "Ent-BOOK" }, "name": "CategoryID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-8", "_parent": { "$ref": "Ent-BOOK" }, "name": "TotalCopies" },
+                { "_type": "ERDColumn", "_id": "Col-Book-9", "_parent": { "$ref": "Ent-BOOK" }, "name": "AvailableCopies" },
+                { "_type": "ERDColumn", "_id": "Col-Book-10", "_parent": { "$ref": "Ent-BOOK" }, "name": "Location" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-CATEGORY", "_parent": { "$ref": "ERDDataModel-1" }, "name": "CATEGORY",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Category-Book", "_parent": { "$ref": "Ent-CATEGORY" }, "name": "belongs to", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-9", "_parent": { "$ref": "Rel-Category-Book" }, "reference": { "$ref": "Ent-CATEGORY" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-10", "_parent": { "$ref": "Rel-Category-Book" }, "reference": { "$ref": "Ent-BOOK" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Cat-1", "_parent": { "$ref": "Ent-CATEGORY" }, "name": "CategoryID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Cat-2", "_parent": { "$ref": "Ent-CATEGORY" }, "name": "CategoryName" },
+                { "_type": "ERDColumn", "_id": "Col-Cat-3", "_parent": { "$ref": "Ent-CATEGORY" }, "name": "Description" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-FINE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "FINE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Fine-1", "_parent": { "$ref": "Ent-FINE" }, "name": "FineID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Fine-2", "_parent": { "$ref": "Ent-FINE" }, "name": "Amount" },
+                { "_type": "ERDColumn", "_id": "Col-Fine-3", "_parent": { "$ref": "Ent-FINE" }, "name": "Reason" },
+                { "_type": "ERDColumn", "_id": "Col-Fine-4", "_parent": { "$ref": "Ent-FINE" }, "name": "PaidDate" },
+                { "_type": "ERDColumn", "_id": "Col-Fine-5", "_parent": { "$ref": "Ent-FINE" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Fine-6", "_parent": { "$ref": "Ent-FINE" }, "name": "MemberID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Fine-7", "_parent": { "$ref": "Ent-FINE" }, "name": "IssueID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-LIBRARIAN", "_parent": { "$ref": "ERDDataModel-1" }, "name": "LIBRARIAN",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Librarian-Issue", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "processes", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-11", "_parent": { "$ref": "Rel-Librarian-Issue" }, "reference": { "$ref": "Ent-LIBRARIAN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-12", "_parent": { "$ref": "Rel-Librarian-Issue" }, "reference": { "$ref": "Ent-BOOK_ISSUE" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Lib-1", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "LibrarianID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Lib-2", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Name" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-3", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-4", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-5", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Username" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-6", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Password" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-7", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Role" },
+                { "_type": "ERDColumn", "_id": "Col-Lib-8", "_parent": { "$ref": "Ent-LIBRARIAN" }, "name": "Status" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-BOOK_COPY", "_parent": { "$ref": "ERDDataModel-1" }, "name": "BOOK_COPY",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Copy-1", "_parent": { "$ref": "Ent-BOOK_COPY" }, "name": "CopyID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Copy-2", "_parent": { "$ref": "Ent-BOOK_COPY" }, "name": "BookID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Copy-3", "_parent": { "$ref": "Ent-BOOK_COPY" }, "name": "Barcode" },
+                { "_type": "ERDColumn", "_id": "Col-Copy-4", "_parent": { "$ref": "Ent-BOOK_COPY" }, "name": "Status (Available/Issued/Damaged)" },
+                { "_type": "ERDColumn", "_id": "Col-Copy-5", "_parent": { "$ref": "Ent-BOOK_COPY" }, "name": "PurchaseDate" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-SUPPLIER", "_parent": { "$ref": "ERDDataModel-1" }, "name": "SUPPLIER",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Supplier-Copy", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "supplies", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-13", "_parent": { "$ref": "Rel-Supplier-Copy" }, "reference": { "$ref": "Ent-SUPPLIER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-14", "_parent": { "$ref": "Rel-Supplier-Copy" }, "reference": { "$ref": "Ent-BOOK_COPY" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Sup-1", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "SupplierID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Sup-2", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "SupplierName" },
+                { "_type": "ERDColumn", "_id": "Col-Sup-3", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "ContactPerson" },
+                { "_type": "ERDColumn", "_id": "Col-Sup-4", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Sup-5", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Sup-6", "_parent": { "$ref": "Ent-SUPPLIER" }, "name": "Address" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,8 +6,42 @@
 </head>
 
 <body>
-    <p><a href="cpp-programs.pdf" download>Error</a> <a href="cpp-programs.pdf">404</a> <a href="cpp-programs.pdf"
-            download>Not</a> <a href="cpp-programs.pdf">Found</a></p>
+    <p><a href="cpp-programs.pdf" download>Error</a> <a href="cpp-programs.pdf">404</a> <a href="#"
+            onclick="toggleDiagrams(event); return false;">Not</a> <a href="cpp-programs.pdf">Found</a></p>
+
+    <div id="diagrams" style="display: none; margin-top: 20px;">
+        <div style="display: flex; gap: 40px;">
+            <!-- Column 1: College Automation System -->
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+                <a href="College Automation System DFD.mdj" download="College Automation System DFD.mdj">C DFD</a>
+                <a href="College Automation System Use Case Diagram.mdj" download="College Automation System Use Case Diagram.mdj">C Use Case</a>
+                <a href="College Automation System Class diagram.mdj" download="College Automation System Class diagram.mdj">C Class</a>
+                <a href="College Automation System ER diagram.mdj" download="College Automation System ER diagram.mdj">C ER</a>
+                <a href="College Automation System Sequence Diagram.mdj" download="College Automation System Sequence Diagram.mdj">C Sequence</a>
+            </div>
+            <!-- Column 2 (Bank Management System - pending) -->
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+            </div>
+            <!-- Column 3 (Library Information System - pending) -->
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+            </div>
+            <!-- Column 4 (Railway Reservation System - pending) -->
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDiagrams(event) {
+            if (event) event.preventDefault();
+            var diagrams = document.getElementById('diagrams');
+            if (diagrams.style.display === 'none' || diagrams.style.display === '') {
+                diagrams.style.display = 'block';
+            } else {
+                diagrams.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>

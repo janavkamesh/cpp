@@ -1,0 +1,217 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Banking Management System Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "ClassDiagram-Bank",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Banking Management System - Class Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView", "_id": "View-Customer", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Customer" }, "left": 50, "top": 50, "width": 200, "height": 180
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Account", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Account" }, "left": 350, "top": 50, "width": 220, "height": 220
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Transaction", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Transaction" }, "left": 680, "top": 50, "width": 200, "height": 160
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Bank", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Bank" }, "left": 50, "top": 450, "width": 200, "height": 140
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Branch", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Branch" }, "left": 350, "top": 450, "width": 220, "height": 180
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Staff", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Staff" }, "left": 680, "top": 450, "width": 200, "height": 200
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Deposit", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Deposit" }, "left": 620, "top": 280, "width": 160, "height": 120
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Withdrawal", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Withdrawal" }, "left": 800, "top": 280, "width": 160, "height": 120
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Manager", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Manager" }, "left": 620, "top": 720, "width": 160, "height": 100
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Teller", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "C-Teller" }, "left": 800, "top": 720, "width": 160, "height": 100
+            },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Cust-Acc", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Assoc-Cust-Acc" }, "tail": { "$ref": "View-Customer" }, "head": { "$ref": "View-Account" }, "lineStyle": 2, "points": "250:140;350:140" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Acc-Tx", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Assoc-Acc-Tx" }, "tail": { "$ref": "View-Account" }, "head": { "$ref": "View-Transaction" }, "lineStyle": 2, "points": "570:130;680:130" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Bank-Branch", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Assoc-Bank-Branch" }, "tail": { "$ref": "View-Bank" }, "head": { "$ref": "View-Branch" }, "lineStyle": 2, "points": "250:520;350:520" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Branch-Acc", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Assoc-Branch-Acc" }, "tail": { "$ref": "View-Branch" }, "head": { "$ref": "View-Account" }, "lineStyle": 2, "points": "460:450;460:270" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Branch-Staff", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Assoc-Branch-Staff" }, "tail": { "$ref": "View-Branch" }, "head": { "$ref": "View-Staff" }, "lineStyle": 2, "points": "570:540;680:540" },
+
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-Dep-Tx", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Gen-Dep-Tx" }, "tail": { "$ref": "View-Deposit" }, "head": { "$ref": "View-Transaction" }, "lineStyle": 2, "points": "700:280;700:245;780:245;780:210" },
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-With-Tx", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Gen-With-Tx" }, "tail": { "$ref": "View-Withdrawal" }, "head": { "$ref": "View-Transaction" }, "lineStyle": 2, "points": "880:280;880:245;780:245;780:210" },
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-Man-Staff", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Gen-Man-Staff" }, "tail": { "$ref": "View-Manager" }, "head": { "$ref": "View-Staff" }, "lineStyle": 2, "points": "700:720;700:685;780:685;780:650" },
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-Tell-Staff", "_parent": { "$ref": "ClassDiagram-Bank" }, "model": { "$ref": "Gen-Tell-Staff" }, "tail": { "$ref": "View-Teller" }, "head": { "$ref": "View-Staff" }, "lineStyle": 2, "points": "880:720;880:685;780:685;780:650" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Customer", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Customer",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Cust-Acc", "_parent": { "$ref": "C-Customer" }, "name": "owns", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-CA", "_parent": { "$ref": "Assoc-Cust-Acc" }, "reference": { "$ref": "C-Customer" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-CA", "_parent": { "$ref": "Assoc-Cust-Acc" }, "reference": { "$ref": "C-Account" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-C1", "_parent": { "$ref": "C-Customer" }, "name": "customerId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C2", "_parent": { "$ref": "C-Customer" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C3", "_parent": { "$ref": "C-Customer" }, "name": "phone", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C4", "_parent": { "$ref": "C-Customer" }, "name": "email", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C5", "_parent": { "$ref": "C-Customer" }, "name": "address", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-C1", "_parent": { "$ref": "C-Customer" }, "name": "register", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-C2", "_parent": { "$ref": "C-Customer" }, "name": "updateProfile", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-C3", "_parent": { "$ref": "C-Customer" }, "name": "viewAccountDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Account", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Account",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Acc-Tx", "_parent": { "$ref": "C-Account" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-AT", "_parent": { "$ref": "Assoc-Acc-Tx" }, "reference": { "$ref": "C-Account" }, "multiplicity": "1", "aggregation": "composite" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-AT", "_parent": { "$ref": "Assoc-Acc-Tx" }, "reference": { "$ref": "C-Transaction" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-A1", "_parent": { "$ref": "C-Account" }, "name": "accountNo", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A2", "_parent": { "$ref": "C-Account" }, "name": "accountType", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A3", "_parent": { "$ref": "C-Account" }, "name": "balance", "type": "double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A4", "_parent": { "$ref": "C-Account" }, "name": "status", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A5", "_parent": { "$ref": "C-Account" }, "name": "openDate", "type": "Date", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-A1", "_parent": { "$ref": "C-Account" }, "name": "deposit", "parameters": [{ "_type": "UMLParameter", "_id": "P-A1", "name": "amount", "type": "double" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A2", "_parent": { "$ref": "C-Account" }, "name": "withdraw", "parameters": [{ "_type": "UMLParameter", "_id": "P-A2", "name": "amount", "type": "double" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A3", "_parent": { "$ref": "C-Account" }, "name": "getBalance", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A4", "_parent": { "$ref": "C-Account" }, "name": "getAccountDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Transaction", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Transaction",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-T1", "_parent": { "$ref": "C-Transaction" }, "name": "transactionId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T2", "_parent": { "$ref": "C-Transaction" }, "name": "type", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T3", "_parent": { "$ref": "C-Transaction" }, "name": "amount", "type": "double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T4", "_parent": { "$ref": "C-Transaction" }, "name": "date", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T5", "_parent": { "$ref": "C-Transaction" }, "name": "description", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-T1", "_parent": { "$ref": "C-Transaction" }, "name": "getDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Bank", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Bank",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Bank-Branch", "_parent": { "$ref": "C-Bank" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-BB", "_parent": { "$ref": "Assoc-Bank-Branch" }, "reference": { "$ref": "C-Bank" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-BB", "_parent": { "$ref": "Assoc-Bank-Branch" }, "reference": { "$ref": "C-Branch" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-B1", "_parent": { "$ref": "C-Bank" }, "name": "bankId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-B2", "_parent": { "$ref": "C-Bank" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-B3", "_parent": { "$ref": "C-Bank" }, "name": "headOfficeAddress", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-B1", "_parent": { "$ref": "C-Bank" }, "name": "addBranch", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-B2", "_parent": { "$ref": "C-Bank" }, "name": "removeBranch", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-B3", "_parent": { "$ref": "C-Bank" }, "name": "getBankDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Branch", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Branch",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Branch-Acc", "_parent": { "$ref": "C-Branch" }, "name": "belongs to", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-BA", "_parent": { "$ref": "Assoc-Branch-Acc" }, "reference": { "$ref": "C-Branch" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-BA", "_parent": { "$ref": "Assoc-Branch-Acc" }, "reference": { "$ref": "C-Account" }, "multiplicity": "0..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Branch-Staff", "_parent": { "$ref": "C-Branch" }, "name": "works at", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-BS", "_parent": { "$ref": "Assoc-Branch-Staff" }, "reference": { "$ref": "C-Branch" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-BS", "_parent": { "$ref": "Assoc-Branch-Staff" }, "reference": { "$ref": "C-Staff" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Br1", "_parent": { "$ref": "C-Branch" }, "name": "branchId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Br2", "_parent": { "$ref": "C-Branch" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Br3", "_parent": { "$ref": "C-Branch" }, "name": "address", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Br4", "_parent": { "$ref": "C-Branch" }, "name": "city", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Br5", "_parent": { "$ref": "C-Branch" }, "name": "ifscCode", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Br1", "_parent": { "$ref": "C-Branch" }, "name": "addCustomer", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Br2", "_parent": { "$ref": "C-Branch" }, "name": "removeCustomer", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Br3", "_parent": { "$ref": "C-Branch" }, "name": "getBranchDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Staff", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Staff",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-St1", "_parent": { "$ref": "C-Staff" }, "name": "staffId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-St2", "_parent": { "$ref": "C-Staff" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-St3", "_parent": { "$ref": "C-Staff" }, "name": "role", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-St4", "_parent": { "$ref": "C-Staff" }, "name": "phone", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-St5", "_parent": { "$ref": "C-Staff" }, "name": "email", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-St1", "_parent": { "$ref": "C-Staff" }, "name": "login", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-St2", "_parent": { "$ref": "C-Staff" }, "name": "manageCustomer", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-St3", "_parent": { "$ref": "C-Staff" }, "name": "manageAccount", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-St4", "_parent": { "$ref": "C-Staff" }, "name": "viewTransactions", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Deposit", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Deposit",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-Dep-Tx", "_parent": { "$ref": "C-Deposit" }, "source": { "$ref": "C-Deposit" }, "target": { "$ref": "C-Transaction" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-D1", "_parent": { "$ref": "C-Deposit" }, "name": "depositId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-D2", "_parent": { "$ref": "C-Deposit" }, "name": "amount", "type": "double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-D3", "_parent": { "$ref": "C-Deposit" }, "name": "date", "type": "Date", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-D1", "_parent": { "$ref": "C-Deposit" }, "name": "process", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Withdrawal", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Withdrawal",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-With-Tx", "_parent": { "$ref": "C-Withdrawal" }, "source": { "$ref": "C-Withdrawal" }, "target": { "$ref": "C-Transaction" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-W1", "_parent": { "$ref": "C-Withdrawal" }, "name": "withdrawalId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-W2", "_parent": { "$ref": "C-Withdrawal" }, "name": "amount", "type": "double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-W3", "_parent": { "$ref": "C-Withdrawal" }, "name": "date", "type": "Date", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-W1", "_parent": { "$ref": "C-Withdrawal" }, "name": "process", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Manager", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Manager",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-Man-Staff", "_parent": { "$ref": "C-Manager" }, "source": { "$ref": "C-Manager" }, "target": { "$ref": "C-Staff" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-M1", "_parent": { "$ref": "C-Manager" }, "name": "department", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-M1", "_parent": { "$ref": "C-Manager" }, "name": "approveLoan", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Teller", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Teller",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-Tell-Staff", "_parent": { "$ref": "C-Teller" }, "source": { "$ref": "C-Teller" }, "target": { "$ref": "C-Staff" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Te1", "_parent": { "$ref": "C-Teller" }, "name": "shift", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Te1", "_parent": { "$ref": "C-Teller" }, "name": "processTransaction", "visibility": "public" }
+          ]
+        }
+      ]
+    }
+  ]
+}

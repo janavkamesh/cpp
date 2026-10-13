@@ -1,0 +1,160 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "ATM System DFD Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "DFDDataFlowModel",
+          "_id": "DFD-Model-ATM",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Flow Model",
+          "ownedElements": [
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L0",
+              "_parent": { "$ref": "DFD-Model-ATM" },
+              "name": "Level 0 (Context Diagram)",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Cust", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Cust" }, "left": 50, "top": 180, "width": 140, "height": 120 },
+                { "_type": "DFDProcessView", "_id": "V-L0-Sys", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Sys" }, "left": 350, "top": 160, "width": 180, "height": 160 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Bank", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Bank" }, "left": 700, "top": 180, "width": 140, "height": 120 },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-C1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-C1" }, "tail": { "$ref": "V-L0-Cust" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "190:210;350:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-C2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-C2" }, "tail": { "$ref": "V-L0-Cust" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "190:230;350:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S1" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Cust" }, "lineStyle": 2, "points": "350:250;190:250" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S2" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Cust" }, "lineStyle": 2, "points": "350:270;190:270" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SB1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SB1" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Bank" }, "lineStyle": 2, "points": "530:210;700:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SB2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SB2" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Bank" }, "lineStyle": 2, "points": "530:230;700:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-BS1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-BS1" }, "tail": { "$ref": "V-L0-Bank" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "700:250;530:250" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-BS2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-BS2" }, "tail": { "$ref": "V-L0-Bank" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "700:270;530:270" }
+              ]
+            },
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L1",
+              "_parent": { "$ref": "DFD-Model-ATM" },
+              "name": "Level 1 DFD - Process Transaction",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Cust", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Cust" }, "left": 40, "top": 50, "width": 150, "height": 600 },
+                
+                { "_type": "DFDProcessView", "_id": "V-L1-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P1" }, "left": 350, "top": 50, "width": 160, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P2" }, "left": 350, "top": 180, "width": 160, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P3" }, "left": 350, "top": 310, "width": 160, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P4" }, "left": 350, "top": 440, "width": 160, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P5" }, "left": 350, "top": 570, "width": 160, "height": 80 },
+                
+                { "_type": "DFDDataStoreView", "_id": "V-L1-DB", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-DB" }, "left": 700, "top": 180, "width": 160, "height": 80 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Bank", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Bank" }, "left": 700, "top": 310, "width": 160, "height": 80 },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P1" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "190:90;350:90" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P1-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P1-P2" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "430:130;430:180" },
+                
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P2a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P2a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "190:210;350:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P2-D1a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P2-D1a" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-DB" }, "lineStyle": 2, "points": "510:200;700:200" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-D1-P2a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-D1-P2a" }, "tail": { "$ref": "V-L1-DB" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "700:230;510:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P2-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P2-P3" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "430:260;430:310" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P3a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P3a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "190:350;350:350" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P3-B1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P3-B1" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-Bank" }, "lineStyle": 2, "points": "510:330;700:330" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-B-P31", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-B-P31" }, "tail": { "$ref": "V-L1-Bank" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "700:360;510:360" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P3-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P3-P4" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "430:390;430:440" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P4-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P4-C1" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:480;190:480" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P4-P5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P4-P5" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-P5" }, "lineStyle": 2, "points": "430:520;430:570" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P5-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P5-C1" }, "tail": { "$ref": "V-L1-P5" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:590;190:590" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P5-C2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P5-C2" }, "tail": { "$ref": "V-L1-P5" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:620;190:620" }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Cust", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "Customer",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-C1", "_parent": { "$ref": "L0-Cust" }, "name": "Card & PIN", "source": { "$ref": "L0-Cust" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-C2", "_parent": { "$ref": "L0-Cust" }, "name": "Transaction Request", "source": { "$ref": "L0-Cust" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L0-Sys", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "0\nATM\nSystem",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-S1", "_parent": { "$ref": "L0-Sys" }, "name": "Transaction Result", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S2", "_parent": { "$ref": "L0-Sys" }, "name": "Balance & Receipt", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SB1", "_parent": { "$ref": "L0-Sys" }, "name": "Transaction Details", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Bank" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SB2", "_parent": { "$ref": "L0-Sys" }, "name": "Account Information", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Bank" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Bank", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "Bank",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-BS1", "_parent": { "$ref": "L0-Bank" }, "name": "Authorization Response", "source": { "$ref": "L0-Bank" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-BS2", "_parent": { "$ref": "L0-Bank" }, "name": "Account Data", "source": { "$ref": "L0-Bank" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Cust", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "Customer",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P1", "_parent": { "$ref": "L1-Cust" }, "name": "Insert Card & PIN", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P1" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P2a", "_parent": { "$ref": "L1-Cust" }, "name": "Transaction Choice", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P2" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P3a", "_parent": { "$ref": "L1-Cust" }, "name": "Amount / Destination", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P1", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "2.1\nAuthenticate User",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P1-P2", "_parent": { "$ref": "L1-P1" }, "name": "Valid Session", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-P2" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P2", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "2.2\nValidate Transaction",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P2-D1a", "_parent": { "$ref": "L1-P2" }, "name": "Account Details", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-DB" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P2-P3", "_parent": { "$ref": "L1-P2" }, "name": "Valid Request", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P3", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "2.3\nExecute Transaction",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P3-B1", "_parent": { "$ref": "L1-P3" }, "name": "Transaction Details", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-Bank" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P3-P4", "_parent": { "$ref": "L1-P3" }, "name": "Execution Status", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-P4" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P4", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "2.4\nProcess Cash",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P4-C1", "_parent": { "$ref": "L1-P4" }, "name": "Dispense Cash", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P4-P5", "_parent": { "$ref": "L1-P4" }, "name": "Transaction Result", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-P5" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P5", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "2.5\nGenerate Response",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P5-C1", "_parent": { "$ref": "L1-P5" }, "name": "Success / Failure Message", "source": { "$ref": "L1-P5" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P5-C2", "_parent": { "$ref": "L1-P5" }, "name": "Balance / Receipt Data", "source": { "$ref": "L1-P5" }, "target": { "$ref": "L1-Cust" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-DB", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "D1   Account Database",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-D1-P2a", "_parent": { "$ref": "L1-DB" }, "name": "Account Information", "source": { "$ref": "L1-DB" }, "target": { "$ref": "L1-P2" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Bank", "_parent": { "$ref": "DFD-Model-ATM" }, "name": "Bank",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-B-P31", "_parent": { "$ref": "L1-Bank" }, "name": "Authorization Response", "source": { "$ref": "L1-Bank" }, "target": { "$ref": "L1-P3" } }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

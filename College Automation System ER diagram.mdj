@@ -1,0 +1,175 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "College Automation System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "ERDDataModel",
+          "_id": "ERDDataModel-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Model",
+          "ownedElements": [
+            {
+              "_type": "ERDDiagram",
+              "_id": "ERDDiagram-1",
+              "_parent": { "$ref": "ERDDataModel-1" },
+              "name": "College Automation System Relationship Diagram (ER)",
+              "ownedViews": [
+                {
+                  "_type": "ERDEntityView", "_id": "View-DEPARTMENT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-DEPARTMENT" }, "left": 450, "top": 50, "width": 200, "height": 100
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-STUDENT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-STUDENT" }, "left": 100, "top": 200, "width": 200, "height": 160
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-FACULTY", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-FACULTY" }, "left": 800, "top": 200, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-COURSE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-COURSE" }, "left": 460, "top": 230, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-FEE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-FEE" }, "left": 50, "top": 450, "width": 160, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-ATTENDANCE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-ATTENDANCE" }, "left": 250, "top": 450, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-ENROLLMENT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-ENROLLMENT" }, "left": 460, "top": 450, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-EXAM", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-EXAM" }, "left": 700, "top": 450, "width": 160, "height": 120
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Dept-Student", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Dept-Student" }, "tail": { "$ref": "View-DEPARTMENT" }, "head": { "$ref": "View-STUDENT" }, "points": "450:120;250:120;250:200"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Dept-Faculty", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Dept-Faculty" }, "tail": { "$ref": "View-DEPARTMENT" }, "head": { "$ref": "View-FACULTY" }, "points": "650:120;850:120;850:200"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Dept-Course", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Dept-Course" }, "tail": { "$ref": "View-DEPARTMENT" }, "head": { "$ref": "View-COURSE" }, "points": "550:150;550:230"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Student-Fee", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Student-Fee" }, "tail": { "$ref": "View-STUDENT" }, "head": { "$ref": "View-FEE" }, "points": "130:360;130:450"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Student-Att", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Student-Att" }, "tail": { "$ref": "View-STUDENT" }, "head": { "$ref": "View-ATTENDANCE" }, "points": "220:360;280:450"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Student-Enr", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Student-Enr" }, "tail": { "$ref": "View-STUDENT" }, "head": { "$ref": "View-ENROLLMENT" }, "points": "300:280;480:450"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Course-Att", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Course-Att" }, "tail": { "$ref": "View-COURSE" }, "head": { "$ref": "View-ATTENDANCE" }, "points": "460:320;380:450"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Course-Enr", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Course-Enr" }, "tail": { "$ref": "View-COURSE" }, "head": { "$ref": "View-ENROLLMENT" }, "points": "550:360;550:450"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Course-Exam", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Course-Exam" }, "tail": { "$ref": "View-COURSE" }, "head": { "$ref": "View-EXAM" }, "points": "640:320;750:450"
+                }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-DEPARTMENT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "DEPARTMENT",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Dept-Student", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-1", "_parent": { "$ref": "Rel-Dept-Student" }, "reference": { "$ref": "Ent-DEPARTMENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-2", "_parent": { "$ref": "Rel-Dept-Student" }, "reference": { "$ref": "Ent-STUDENT" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Dept-Faculty", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-3", "_parent": { "$ref": "Rel-Dept-Faculty" }, "reference": { "$ref": "Ent-DEPARTMENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-4", "_parent": { "$ref": "Rel-Dept-Faculty" }, "reference": { "$ref": "Ent-FACULTY" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Dept-Course", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "offers", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-5", "_parent": { "$ref": "Rel-Dept-Course" }, "reference": { "$ref": "Ent-DEPARTMENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-6", "_parent": { "$ref": "Rel-Dept-Course" }, "reference": { "$ref": "Ent-COURSE" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Dept-1", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "DepartmentID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Dept-2", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "DepartmentName" },
+                { "_type": "ERDColumn", "_id": "Col-Dept-3", "_parent": { "$ref": "Ent-DEPARTMENT" }, "name": "HOD" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-STUDENT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "STUDENT",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Student-Fee", "_parent": { "$ref": "Ent-STUDENT" }, "name": "pays", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-7", "_parent": { "$ref": "Rel-Student-Fee" }, "reference": { "$ref": "Ent-STUDENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-8", "_parent": { "$ref": "Rel-Student-Fee" }, "reference": { "$ref": "Ent-FEE" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Student-Att", "_parent": { "$ref": "Ent-STUDENT" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-9", "_parent": { "$ref": "Rel-Student-Att" }, "reference": { "$ref": "Ent-STUDENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-10", "_parent": { "$ref": "Rel-Student-Att" }, "reference": { "$ref": "Ent-ATTENDANCE" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Student-Enr", "_parent": { "$ref": "Ent-STUDENT" }, "name": "enrolls in", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-11", "_parent": { "$ref": "Rel-Student-Enr" }, "reference": { "$ref": "Ent-STUDENT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-12", "_parent": { "$ref": "Rel-Student-Enr" }, "reference": { "$ref": "Ent-ENROLLMENT" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Stud-1", "_parent": { "$ref": "Ent-STUDENT" }, "name": "StudentID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Stud-2", "_parent": { "$ref": "Ent-STUDENT" }, "name": "FirstName" },
+                { "_type": "ERDColumn", "_id": "Col-Stud-3", "_parent": { "$ref": "Ent-STUDENT" }, "name": "LastName" },
+                { "_type": "ERDColumn", "_id": "Col-Stud-4", "_parent": { "$ref": "Ent-STUDENT" }, "name": "DOB" },
+                { "_type": "ERDColumn", "_id": "Col-Stud-5", "_parent": { "$ref": "Ent-STUDENT" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Stud-6", "_parent": { "$ref": "Ent-STUDENT" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Stud-7", "_parent": { "$ref": "Ent-STUDENT" }, "name": "DepartmentID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-FACULTY", "_parent": { "$ref": "ERDDataModel-1" }, "name": "FACULTY",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Fac-1", "_parent": { "$ref": "Ent-FACULTY" }, "name": "FacultyID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Fac-2", "_parent": { "$ref": "Ent-FACULTY" }, "name": "FacultyName" },
+                { "_type": "ERDColumn", "_id": "Col-Fac-3", "_parent": { "$ref": "Ent-FACULTY" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Fac-4", "_parent": { "$ref": "Ent-FACULTY" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Fac-5", "_parent": { "$ref": "Ent-FACULTY" }, "name": "DepartmentID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-COURSE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "COURSE",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Course-Att", "_parent": { "$ref": "Ent-COURSE" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-13", "_parent": { "$ref": "Rel-Course-Att" }, "reference": { "$ref": "Ent-COURSE" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-14", "_parent": { "$ref": "Rel-Course-Att" }, "reference": { "$ref": "Ent-ATTENDANCE" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Course-Enr", "_parent": { "$ref": "Ent-COURSE" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-15", "_parent": { "$ref": "Rel-Course-Enr" }, "reference": { "$ref": "Ent-COURSE" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-16", "_parent": { "$ref": "Rel-Course-Enr" }, "reference": { "$ref": "Ent-ENROLLMENT" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Course-Exam", "_parent": { "$ref": "Ent-COURSE" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-17", "_parent": { "$ref": "Rel-Course-Exam" }, "reference": { "$ref": "Ent-COURSE" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-18", "_parent": { "$ref": "Rel-Course-Exam" }, "reference": { "$ref": "Ent-EXAM" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Crs-1", "_parent": { "$ref": "Ent-COURSE" }, "name": "CourseID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Crs-2", "_parent": { "$ref": "Ent-COURSE" }, "name": "CourseName" },
+                { "_type": "ERDColumn", "_id": "Col-Crs-3", "_parent": { "$ref": "Ent-COURSE" }, "name": "Credits" },
+                { "_type": "ERDColumn", "_id": "Col-Crs-4", "_parent": { "$ref": "Ent-COURSE" }, "name": "DepartmentID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-FEE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "FEE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Fee-1", "_parent": { "$ref": "Ent-FEE" }, "name": "FeeID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Fee-2", "_parent": { "$ref": "Ent-FEE" }, "name": "Amount" },
+                { "_type": "ERDColumn", "_id": "Col-Fee-3", "_parent": { "$ref": "Ent-FEE" }, "name": "DueDate" },
+                { "_type": "ERDColumn", "_id": "Col-Fee-4", "_parent": { "$ref": "Ent-FEE" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Fee-5", "_parent": { "$ref": "Ent-FEE" }, "name": "StudentID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-ATTENDANCE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "ATTENDANCE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Att-1", "_parent": { "$ref": "Ent-ATTENDANCE" }, "name": "AttendanceID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Att-2", "_parent": { "$ref": "Ent-ATTENDANCE" }, "name": "Date" },
+                { "_type": "ERDColumn", "_id": "Col-Att-3", "_parent": { "$ref": "Ent-ATTENDANCE" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Att-4", "_parent": { "$ref": "Ent-ATTENDANCE" }, "name": "StudentID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Att-5", "_parent": { "$ref": "Ent-ATTENDANCE" }, "name": "CourseID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-ENROLLMENT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "ENROLLMENT",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Enr-1", "_parent": { "$ref": "Ent-ENROLLMENT" }, "name": "EnrollmentID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Enr-2", "_parent": { "$ref": "Ent-ENROLLMENT" }, "name": "EnrollmentDate" },
+                { "_type": "ERDColumn", "_id": "Col-Enr-3", "_parent": { "$ref": "Ent-ENROLLMENT" }, "name": "Grade" },
+                { "_type": "ERDColumn", "_id": "Col-Enr-4", "_parent": { "$ref": "Ent-ENROLLMENT" }, "name": "StudentID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Enr-5", "_parent": { "$ref": "Ent-ENROLLMENT" }, "name": "CourseID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-EXAM", "_parent": { "$ref": "ERDDataModel-1" }, "name": "EXAM",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Exam-1", "_parent": { "$ref": "Ent-EXAM" }, "name": "ExamID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Exam-2", "_parent": { "$ref": "Ent-EXAM" }, "name": "ExamName" },
+                { "_type": "ERDColumn", "_id": "Col-Exam-3", "_parent": { "$ref": "Ent-EXAM" }, "name": "ExamDate" },
+                { "_type": "ERDColumn", "_id": "Col-Exam-4", "_parent": { "$ref": "Ent-EXAM" }, "name": "CourseID", "foreignKey": true }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Railway Reservation System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "ERDDataModel",
+          "_id": "ERDDataModel-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Model",
+          "ownedElements": [
+            {
+              "_type": "ERDDiagram",
+              "_id": "ERDDiagram-1",
+              "_parent": { "$ref": "ERDDataModel-1" },
+              "name": "Railway Reservation System - ER Diagram",
+              "ownedViews": [
+                {
+                  "_type": "ERDEntityView", "_id": "View-PASSENGER", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-PASSENGER" }, "left": 50, "top": 50, "width": 180, "height": 200
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-BOOKING", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-BOOKING" }, "left": 300, "top": 50, "width": 180, "height": 220
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-TRAIN", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-TRAIN" }, "left": 550, "top": 50, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-STATION", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-STATION" }, "left": 800, "top": 50, "width": 180, "height": 150
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-PAYMENT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-PAYMENT" }, "left": 50, "top": 350, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-CLASS", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-CLASS" }, "left": 250, "top": 350, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-SEAT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-SEAT" }, "left": 450, "top": 350, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-COACH", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-COACH" }, "left": 650, "top": 350, "width": 180, "height": 130
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-SCHEDULE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-SCHEDULE" }, "left": 850, "top": 350, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Pass-Book", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Pass-Book" }, "tail": { "$ref": "View-PASSENGER" }, "head": { "$ref": "View-BOOKING" }, "points": "230:150;300:150"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Pass-Pay", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Pass-Pay" }, "tail": { "$ref": "View-PASSENGER" }, "head": { "$ref": "View-PAYMENT" }, "points": "140:250;140:350"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Train-Book", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Train-Book" }, "tail": { "$ref": "View-TRAIN" }, "head": { "$ref": "View-BOOKING" }, "points": "550:140;480:140"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Train-StatSrc", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Train-StatSrc" }, "tail": { "$ref": "View-TRAIN" }, "head": { "$ref": "View-STATION" }, "points": "730:100;800:100"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Train-StatDst", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Train-StatDst" }, "tail": { "$ref": "View-TRAIN" }, "head": { "$ref": "View-STATION" }, "points": "730:150;800:150"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Train-Coach", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Train-Coach" }, "tail": { "$ref": "View-TRAIN" }, "head": { "$ref": "View-COACH" }, "points": "640:230;640:290;740:290;740:350"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Train-Sched", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Train-Sched" }, "tail": { "$ref": "View-TRAIN" }, "head": { "$ref": "View-SCHEDULE" }, "points": "710:230;710:290;940:290;940:350"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Class-Book", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Class-Book" }, "tail": { "$ref": "View-CLASS" }, "head": { "$ref": "View-BOOKING" }, "points": "340:350;340:270"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Seat-Book", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Seat-Book" }, "tail": { "$ref": "View-SEAT" }, "head": { "$ref": "View-BOOKING" }, "points": "420:350;420:270"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Coach-Seat", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Coach-Seat" }, "tail": { "$ref": "View-COACH" }, "head": { "$ref": "View-SEAT" }, "points": "650:415;630:415"
+                }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-PASSENGER", "_parent": { "$ref": "ERDDataModel-1" }, "name": "PASSENGER",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Pass-Book", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "makes", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-1", "_parent": { "$ref": "Rel-Pass-Book" }, "reference": { "$ref": "Ent-PASSENGER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-2", "_parent": { "$ref": "Rel-Pass-Book" }, "reference": { "$ref": "Ent-BOOKING" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Pass-Pay", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "makes", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-3", "_parent": { "$ref": "Rel-Pass-Pay" }, "reference": { "$ref": "Ent-PASSENGER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-4", "_parent": { "$ref": "Rel-Pass-Pay" }, "reference": { "$ref": "Ent-PAYMENT" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Pass-1", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "PassengerID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Pass-2", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "FirstName" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-3", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "LastName" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-4", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "DOB" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-5", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "Gender" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-6", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "PhoneNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-7", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-8", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "Address" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-9", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "IDProofType" },
+                { "_type": "ERDColumn", "_id": "Col-Pass-10", "_parent": { "$ref": "Ent-PASSENGER" }, "name": "IDProofNumber" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-BOOKING", "_parent": { "$ref": "ERDDataModel-1" }, "name": "BOOKING",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Book-1", "_parent": { "$ref": "Ent-BOOKING" }, "name": "BookingID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-2", "_parent": { "$ref": "Ent-BOOKING" }, "name": "BookingDate" },
+                { "_type": "ERDColumn", "_id": "Col-Book-3", "_parent": { "$ref": "Ent-BOOKING" }, "name": "JourneyDate" },
+                { "_type": "ERDColumn", "_id": "Col-Book-4", "_parent": { "$ref": "Ent-BOOKING" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Book-5", "_parent": { "$ref": "Ent-BOOKING" }, "name": "TotalAmount" },
+                { "_type": "ERDColumn", "_id": "Col-Book-6", "_parent": { "$ref": "Ent-BOOKING" }, "name": "PaymentStatus" },
+                { "_type": "ERDColumn", "_id": "Col-Book-7", "_parent": { "$ref": "Ent-BOOKING" }, "name": "PassengerID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-8", "_parent": { "$ref": "Ent-BOOKING" }, "name": "TrainID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-9", "_parent": { "$ref": "Ent-BOOKING" }, "name": "ClassID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Book-10", "_parent": { "$ref": "Ent-BOOKING" }, "name": "SeatID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-TRAIN", "_parent": { "$ref": "ERDDataModel-1" }, "name": "TRAIN",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Train-Book", "_parent": { "$ref": "Ent-TRAIN" }, "name": "for", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-5", "_parent": { "$ref": "Rel-Train-Book" }, "reference": { "$ref": "Ent-TRAIN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-6", "_parent": { "$ref": "Rel-Train-Book" }, "reference": { "$ref": "Ent-BOOKING" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Train-StatSrc", "_parent": { "$ref": "Ent-TRAIN" }, "name": "has (source)", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-7", "_parent": { "$ref": "Rel-Train-StatSrc" }, "reference": { "$ref": "Ent-TRAIN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-8", "_parent": { "$ref": "Rel-Train-StatSrc" }, "reference": { "$ref": "Ent-STATION" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Train-StatDst", "_parent": { "$ref": "Ent-TRAIN" }, "name": "has (destination)", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-9", "_parent": { "$ref": "Rel-Train-StatDst" }, "reference": { "$ref": "Ent-TRAIN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-10", "_parent": { "$ref": "Rel-Train-StatDst" }, "reference": { "$ref": "Ent-STATION" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Train-Coach", "_parent": { "$ref": "Ent-TRAIN" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-11", "_parent": { "$ref": "Rel-Train-Coach" }, "reference": { "$ref": "Ent-TRAIN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-12", "_parent": { "$ref": "Rel-Train-Coach" }, "reference": { "$ref": "Ent-COACH" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Train-Sched", "_parent": { "$ref": "Ent-TRAIN" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-13", "_parent": { "$ref": "Rel-Train-Sched" }, "reference": { "$ref": "Ent-TRAIN" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-14", "_parent": { "$ref": "Rel-Train-Sched" }, "reference": { "$ref": "Ent-SCHEDULE" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Train-1", "_parent": { "$ref": "Ent-TRAIN" }, "name": "TrainID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Train-2", "_parent": { "$ref": "Ent-TRAIN" }, "name": "TrainName" },
+                { "_type": "ERDColumn", "_id": "Col-Train-3", "_parent": { "$ref": "Ent-TRAIN" }, "name": "TrainNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Train-4", "_parent": { "$ref": "Ent-TRAIN" }, "name": "SourceStationID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Train-5", "_parent": { "$ref": "Ent-TRAIN" }, "name": "DestinationStationID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Train-6", "_parent": { "$ref": "Ent-TRAIN" }, "name": "DepartureTime" },
+                { "_type": "ERDColumn", "_id": "Col-Train-7", "_parent": { "$ref": "Ent-TRAIN" }, "name": "ArrivalTime" },
+                { "_type": "ERDColumn", "_id": "Col-Train-8", "_parent": { "$ref": "Ent-TRAIN" }, "name": "TotalSeats" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-STATION", "_parent": { "$ref": "ERDDataModel-1" }, "name": "STATION",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Stat-1", "_parent": { "$ref": "Ent-STATION" }, "name": "StationID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Stat-2", "_parent": { "$ref": "Ent-STATION" }, "name": "StationName" },
+                { "_type": "ERDColumn", "_id": "Col-Stat-3", "_parent": { "$ref": "Ent-STATION" }, "name": "City" },
+                { "_type": "ERDColumn", "_id": "Col-Stat-4", "_parent": { "$ref": "Ent-STATION" }, "name": "State" },
+                { "_type": "ERDColumn", "_id": "Col-Stat-5", "_parent": { "$ref": "Ent-STATION" }, "name": "StationCode" },
+                { "_type": "ERDColumn", "_id": "Col-Stat-6", "_parent": { "$ref": "Ent-STATION" }, "name": "Type" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-PAYMENT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "PAYMENT",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Pay-1", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "PaymentID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Pay-2", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "BookingID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Pay-3", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "PaymentDate" },
+                { "_type": "ERDColumn", "_id": "Col-Pay-4", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "Amount" },
+                { "_type": "ERDColumn", "_id": "Col-Pay-5", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "PaymentMode" },
+                { "_type": "ERDColumn", "_id": "Col-Pay-6", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "TransactionReference" },
+                { "_type": "ERDColumn", "_id": "Col-Pay-7", "_parent": { "$ref": "Ent-PAYMENT" }, "name": "Status" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-CLASS", "_parent": { "$ref": "ERDDataModel-1" }, "name": "CLASS",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Class-Book", "_parent": { "$ref": "Ent-CLASS" }, "name": "for", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-15", "_parent": { "$ref": "Rel-Class-Book" }, "reference": { "$ref": "Ent-CLASS" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-16", "_parent": { "$ref": "Rel-Class-Book" }, "reference": { "$ref": "Ent-BOOKING" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Class-1", "_parent": { "$ref": "Ent-CLASS" }, "name": "ClassID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Class-2", "_parent": { "$ref": "Ent-CLASS" }, "name": "ClassName" },
+                { "_type": "ERDColumn", "_id": "Col-Class-3", "_parent": { "$ref": "Ent-CLASS" }, "name": "Fare" },
+                { "_type": "ERDColumn", "_id": "Col-Class-4", "_parent": { "$ref": "Ent-CLASS" }, "name": "Description" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-SEAT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "SEAT",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Seat-Book", "_parent": { "$ref": "Ent-SEAT" }, "name": "includes", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-17", "_parent": { "$ref": "Rel-Seat-Book" }, "reference": { "$ref": "Ent-SEAT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-18", "_parent": { "$ref": "Rel-Seat-Book" }, "reference": { "$ref": "Ent-BOOKING" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Seat-1", "_parent": { "$ref": "Ent-SEAT" }, "name": "SeatID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Seat-2", "_parent": { "$ref": "Ent-SEAT" }, "name": "SeatNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Seat-3", "_parent": { "$ref": "Ent-SEAT" }, "name": "CoachID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Seat-4", "_parent": { "$ref": "Ent-SEAT" }, "name": "ClassID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Seat-5", "_parent": { "$ref": "Ent-SEAT" }, "name": "Status" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-COACH", "_parent": { "$ref": "ERDDataModel-1" }, "name": "COACH",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Coach-Seat", "_parent": { "$ref": "Ent-COACH" }, "name": "contains", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-19", "_parent": { "$ref": "Rel-Coach-Seat" }, "reference": { "$ref": "Ent-COACH" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-20", "_parent": { "$ref": "Rel-Coach-Seat" }, "reference": { "$ref": "Ent-SEAT" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Coach-1", "_parent": { "$ref": "Ent-COACH" }, "name": "CoachID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Coach-2", "_parent": { "$ref": "Ent-COACH" }, "name": "CoachNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Coach-3", "_parent": { "$ref": "Ent-COACH" }, "name": "CoachType" },
+                { "_type": "ERDColumn", "_id": "Col-Coach-4", "_parent": { "$ref": "Ent-COACH" }, "name": "TotalSeats" },
+                { "_type": "ERDColumn", "_id": "Col-Coach-5", "_parent": { "$ref": "Ent-COACH" }, "name": "TrainID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-SCHEDULE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "SCHEDULE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Sched-1", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "ScheduleID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Sched-2", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "TrainID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Sched-3", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "StationID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Sched-4", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "ArrivalTime" },
+                { "_type": "ERDColumn", "_id": "Col-Sched-5", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "DepartureTime" },
+                { "_type": "ERDColumn", "_id": "Col-Sched-6", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "DayOrder" },
+                { "_type": "ERDColumn", "_id": "Col-Sched-7", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "Distance" },
+                { "_type": "ERDColumn", "_id": "Col-Sched-8", "_parent": { "$ref": "Ent-SCHEDULE" }, "name": "HaltDuration" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

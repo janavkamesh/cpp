@@ -1,0 +1,241 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "College Automation System Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "ClassDiagram-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "College Automation System - Class Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView", "_id": "View-Student", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Student" }, "left": 50, "top": 50, "width": 220, "height": 200
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Course", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Course" }, "left": 400, "top": 50, "width": 200, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Faculty", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Faculty" }, "left": 750, "top": 50, "width": 200, "height": 180
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Enrollment", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Enrollment" }, "left": 230, "top": 350, "width": 180, "height": 140
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Department", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Department" }, "left": 480, "top": 350, "width": 200, "height": 140
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Admin", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Admin" }, "left": 750, "top": 350, "width": 200, "height": 180
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Timetable", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Timetable" }, "left": 50, "top": 600, "width": 180, "height": 140
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-CSE", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-CSE" }, "left": 300, "top": 600, "width": 160, "height": 100
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-ECE", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-ECE" }, "left": 480, "top": 600, "width": 160, "height": 100
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-ME", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-ME" }, "left": 660, "top": 600, "width": 160, "height": 100
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Result", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "C-Result" }, "left": 660, "top": 800, "width": 160, "height": 130
+            },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Student-Course", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Student-Course" }, "tail": { "$ref": "View-Student" }, "head": { "$ref": "View-Course" }, "lineStyle": 2, "points": "270:125;400:125" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Faculty-Course", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Faculty-Course" }, "tail": { "$ref": "View-Faculty" }, "head": { "$ref": "View-Course" }, "lineStyle": 2, "points": "750:125;600:125" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Faculty-Dept", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Faculty-Dept" }, "tail": { "$ref": "View-Faculty" }, "head": { "$ref": "View-Department" }, "lineStyle": 2, "points": "750:180;715:180;715:400;680:400" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Admin-Dept", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Admin-Dept" }, "tail": { "$ref": "View-Admin" }, "head": { "$ref": "View-Department" }, "lineStyle": 2, "points": "750:420;680:420" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Student-Enroll", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Student-Enroll" }, "tail": { "$ref": "View-Student" }, "head": { "$ref": "View-Enrollment" }, "lineStyle": 2, "points": "160:250;160:300;280:300;280:350" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Course-Enroll", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Course-Enroll" }, "tail": { "$ref": "View-Course" }, "head": { "$ref": "View-Enrollment" }, "lineStyle": 2, "points": "500:200;500:300;360:300;360:350" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Student-Time", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Student-Time" }, "tail": { "$ref": "View-Student" }, "head": { "$ref": "View-Timetable" }, "lineStyle": 2, "points": "100:250;100:600" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Student-Result", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Assoc-Student-Result" }, "tail": { "$ref": "View-Student" }, "head": { "$ref": "View-Result" }, "lineStyle": 2, "points": "60:250;60:960;740:960;740:930" },
+
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-CSE", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Gen-CSE" }, "tail": { "$ref": "View-CSE" }, "head": { "$ref": "View-Department" }, "lineStyle": 2, "points": "380:600;380:550;580:550;580:490" },
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-ECE", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Gen-ECE" }, "tail": { "$ref": "View-ECE" }, "head": { "$ref": "View-Department" }, "lineStyle": 2, "points": "560:600;560:550;580:550;580:490" },
+            { "_type": "UMLGeneralizationView", "_id": "View-Gen-ME", "_parent": { "$ref": "ClassDiagram-1" }, "model": { "$ref": "Gen-ME" }, "tail": { "$ref": "View-ME" }, "head": { "$ref": "View-Department" }, "lineStyle": 2, "points": "740:600;740:550;580:550;580:490" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Student", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Student",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Student-Course", "_parent": { "$ref": "C-Student" }, "name": "enrolls in", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-SC", "_parent": { "$ref": "Assoc-Student-Course" }, "reference": { "$ref": "C-Student" }, "multiplicity": "0..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-SC", "_parent": { "$ref": "Assoc-Student-Course" }, "reference": { "$ref": "C-Course" }, "multiplicity": "0..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Student-Enroll", "_parent": { "$ref": "C-Student" }, "end1": { "_type": "UMLAssociationEnd", "_id": "E1-SE", "_parent": { "$ref": "Assoc-Student-Enroll" }, "reference": { "$ref": "C-Student" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-SE", "_parent": { "$ref": "Assoc-Student-Enroll" }, "reference": { "$ref": "C-Enrollment" }, "multiplicity": "0..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Student-Time", "_parent": { "$ref": "C-Student" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-ST", "_parent": { "$ref": "Assoc-Student-Time" }, "reference": { "$ref": "C-Student" }, "multiplicity": "1", "aggregation": "shared" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-ST", "_parent": { "$ref": "Assoc-Student-Time" }, "reference": { "$ref": "C-Timetable" } } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Student-Result", "_parent": { "$ref": "C-Student" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-SR", "_parent": { "$ref": "Assoc-Student-Result" }, "reference": { "$ref": "C-Student" } }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-SR", "_parent": { "$ref": "Assoc-Student-Result" }, "reference": { "$ref": "C-Result" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-S1", "_parent": { "$ref": "C-Student" }, "name": "studentId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-S2", "_parent": { "$ref": "C-Student" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-S3", "_parent": { "$ref": "C-Student" }, "name": "department", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-S4", "_parent": { "$ref": "C-Student" }, "name": "year", "type": "int", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-S5", "_parent": { "$ref": "C-Student" }, "name": "email", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-S6", "_parent": { "$ref": "C-Student" }, "name": "phone", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-S1", "_parent": { "$ref": "C-Student" }, "name": "register", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-S2", "_parent": { "$ref": "C-Student" }, "name": "login", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-S3", "_parent": { "$ref": "C-Student" }, "name": "viewProfile", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-S4", "_parent": { "$ref": "C-Student" }, "name": "enrollCourse", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-S5", "_parent": { "$ref": "C-Student" }, "name": "viewResults", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Course", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Course",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Course-Enroll", "_parent": { "$ref": "C-Course" }, "name": "for", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-CE", "_parent": { "$ref": "Assoc-Course-Enroll" }, "reference": { "$ref": "C-Course" }, "multiplicity": "1", "aggregation": "composite" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-CE", "_parent": { "$ref": "Assoc-Course-Enroll" }, "reference": { "$ref": "C-Enrollment" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-C1", "_parent": { "$ref": "C-Course" }, "name": "courseId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C2", "_parent": { "$ref": "C-Course" }, "name": "title", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C3", "_parent": { "$ref": "C-Course" }, "name": "credits", "type": "int", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-C4", "_parent": { "$ref": "C-Course" }, "name": "department", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-C1", "_parent": { "$ref": "C-Course" }, "name": "addCourse", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-C2", "_parent": { "$ref": "C-Course" }, "name": "updateCourse", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-C3", "_parent": { "$ref": "C-Course" }, "name": "viewDetails", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Faculty", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Faculty",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Faculty-Course", "_parent": { "$ref": "C-Faculty" }, "name": "teaches", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-FC", "_parent": { "$ref": "Assoc-Faculty-Course" }, "reference": { "$ref": "C-Faculty" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-FC", "_parent": { "$ref": "Assoc-Faculty-Course" }, "reference": { "$ref": "C-Course" }, "multiplicity": "0..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Faculty-Dept", "_parent": { "$ref": "C-Faculty" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-FD", "_parent": { "$ref": "Assoc-Faculty-Dept" }, "reference": { "$ref": "C-Faculty" }, "multiplicity": "0..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-FD", "_parent": { "$ref": "Assoc-Faculty-Dept" }, "reference": { "$ref": "C-Department" }, "multiplicity": "1" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-F1", "_parent": { "$ref": "C-Faculty" }, "name": "facultyId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-F2", "_parent": { "$ref": "C-Faculty" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-F3", "_parent": { "$ref": "C-Faculty" }, "name": "department", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-F4", "_parent": { "$ref": "C-Faculty" }, "name": "email", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-F5", "_parent": { "$ref": "C-Faculty" }, "name": "phone", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-F1", "_parent": { "$ref": "C-Faculty" }, "name": "login", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-F2", "_parent": { "$ref": "C-Faculty" }, "name": "addCourse", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-F3", "_parent": { "$ref": "C-Faculty" }, "name": "viewStudents", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-F4", "_parent": { "$ref": "C-Faculty" }, "name": "assignGrade", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Enrollment", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Enrollment",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-E1", "_parent": { "$ref": "C-Enrollment" }, "name": "enrollmentId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-E2", "_parent": { "$ref": "C-Enrollment" }, "name": "enrollDate", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-E3", "_parent": { "$ref": "C-Enrollment" }, "name": "status", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-E4", "_parent": { "$ref": "C-Enrollment" }, "name": "grade", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-E1", "_parent": { "$ref": "C-Enrollment" }, "name": "generateId", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-E2", "_parent": { "$ref": "C-Enrollment" }, "name": "updateStatus", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-E3", "_parent": { "$ref": "C-Enrollment" }, "name": "assignGrade", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Department", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Department",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-D1", "_parent": { "$ref": "C-Department" }, "name": "deptId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-D2", "_parent": { "$ref": "C-Department" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-D3", "_parent": { "$ref": "C-Department" }, "name": "hod", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-D1", "_parent": { "$ref": "C-Department" }, "name": "addDepartment", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-D2", "_parent": { "$ref": "C-Department" }, "name": "updateDepartment", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-D3", "_parent": { "$ref": "C-Department" }, "name": "viewFaculty", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Admin", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Admin",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Admin-Dept", "_parent": { "$ref": "C-Admin" }, "name": "manages", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-AD", "_parent": { "$ref": "Assoc-Admin-Dept" }, "reference": { "$ref": "C-Admin" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-AD", "_parent": { "$ref": "Assoc-Admin-Dept" }, "reference": { "$ref": "C-Department" }, "multiplicity": "0..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-A1", "_parent": { "$ref": "C-Admin" }, "name": "adminId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A2", "_parent": { "$ref": "C-Admin" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A3", "_parent": { "$ref": "C-Admin" }, "name": "email", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-A4", "_parent": { "$ref": "C-Admin" }, "name": "phone", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-A1", "_parent": { "$ref": "C-Admin" }, "name": "login", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A2", "_parent": { "$ref": "C-Admin" }, "name": "manageStudents", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A3", "_parent": { "$ref": "C-Admin" }, "name": "manageFaculty", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A4", "_parent": { "$ref": "C-Admin" }, "name": "manageCourses", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-A5", "_parent": { "$ref": "C-Admin" }, "name": "generateReports", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Timetable", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Timetable",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-T1", "_parent": { "$ref": "C-Timetable" }, "name": "timetableId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T2", "_parent": { "$ref": "C-Timetable" }, "name": "date", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T3", "_parent": { "$ref": "C-Timetable" }, "name": "day", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-T4", "_parent": { "$ref": "C-Timetable" }, "name": "roomNo", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-T1", "_parent": { "$ref": "C-Timetable" }, "name": "createTimetable", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-T2", "_parent": { "$ref": "C-Timetable" }, "name": "updateTimetable", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-T3", "_parent": { "$ref": "C-Timetable" }, "name": "viewTimetable", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-CSE", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "CSE Department",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-CSE", "_parent": { "$ref": "C-CSE" }, "source": { "$ref": "C-CSE" }, "target": { "$ref": "C-Department" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-CSE1", "_parent": { "$ref": "C-CSE" }, "name": "deptId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-CSE2", "_parent": { "$ref": "C-CSE" }, "name": "name", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-CSE1", "_parent": { "$ref": "C-CSE" }, "name": "viewLabs", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-ECE", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "ECE Department",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-ECE", "_parent": { "$ref": "C-ECE" }, "source": { "$ref": "C-ECE" }, "target": { "$ref": "C-Department" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-ECE1", "_parent": { "$ref": "C-ECE" }, "name": "deptId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-ECE2", "_parent": { "$ref": "C-ECE" }, "name": "name", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-ECE1", "_parent": { "$ref": "C-ECE" }, "name": "viewLabs", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-ME", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "ME Department",
+          "ownedElements": [
+            { "_type": "UMLGeneralization", "_id": "Gen-ME", "_parent": { "$ref": "C-ME" }, "source": { "$ref": "C-ME" }, "target": { "$ref": "C-Department" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-ME1", "_parent": { "$ref": "C-ME" }, "name": "deptId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-ME2", "_parent": { "$ref": "C-ME" }, "name": "name", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-ME1", "_parent": { "$ref": "C-ME" }, "name": "viewLabs", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Result", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Result",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-R1", "_parent": { "$ref": "C-Result" }, "name": "resultId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-R2", "_parent": { "$ref": "C-Result" }, "name": "marks", "type": "double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-R3", "_parent": { "$ref": "C-Result" }, "name": "grade", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-R4", "_parent": { "$ref": "C-Result" }, "name": "status", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-R1", "_parent": { "$ref": "C-Result" }, "name": "calculateGrade", "visibility": "public" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Banking Management System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "ERDDataModel",
+          "_id": "ERDDataModel-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Model",
+          "ownedElements": [
+            {
+              "_type": "ERDDiagram",
+              "_id": "ERDDiagram-1",
+              "_parent": { "$ref": "ERDDataModel-1" },
+              "name": "Banking Management System - ER Diagram",
+              "ownedViews": [
+                {
+                  "_type": "ERDEntityView", "_id": "View-CUSTOMER", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-CUSTOMER" }, "left": 40, "top": 40, "width": 210, "height": 220
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-ACCOUNT", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-ACCOUNT" }, "left": 380, "top": 40, "width": 220, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-BRANCH", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-BRANCH" }, "left": 750, "top": 40, "width": 180, "height": 160
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-TRANSACTION", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-TRANSACTION" }, "left": 40, "top": 360, "width": 260, "height": 160
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-CARD", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-CARD" }, "left": 350, "top": 360, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-LOAN", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-LOAN" }, "left": 560, "top": 360, "width": 210, "height": 180
+                },
+                {
+                  "_type": "ERDEntityView", "_id": "View-EMPLOYEE", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Ent-EMPLOYEE" }, "left": 800, "top": 360, "width": 180, "height": 180
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Cust-Acc", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Cust-Acc" }, "tail": { "$ref": "View-CUSTOMER" }, "head": { "$ref": "View-ACCOUNT" }, "points": "250:130;380:130"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Cust-Tx", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Cust-Tx" }, "tail": { "$ref": "View-CUSTOMER" }, "head": { "$ref": "View-TRANSACTION" }, "points": "140:260;140:360"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Branch-Acc", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Branch-Acc" }, "tail": { "$ref": "View-BRANCH" }, "head": { "$ref": "View-ACCOUNT" }, "points": "750:120;600:120"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Acc-Tx", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Acc-Tx" }, "tail": { "$ref": "View-ACCOUNT" }, "head": { "$ref": "View-TRANSACTION" }, "points": "400:220;250:360"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Acc-Card", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Acc-Card" }, "tail": { "$ref": "View-ACCOUNT" }, "head": { "$ref": "View-CARD" }, "points": "460:220;440:360"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Acc-Loan", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Acc-Loan" }, "tail": { "$ref": "View-ACCOUNT" }, "head": { "$ref": "View-LOAN" }, "points": "530:220;600:360"
+                },
+                {
+                  "_type": "ERDRelationshipView", "_id": "View-Rel-Branch-Emp", "_parent": { "$ref": "ERDDiagram-1" }, "model": { "$ref": "Rel-Branch-Emp" }, "tail": { "$ref": "View-BRANCH" }, "head": { "$ref": "View-EMPLOYEE" }, "points": "840:200;840:360"
+                }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-CUSTOMER", "_parent": { "$ref": "ERDDataModel-1" }, "name": "CUSTOMER",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Cust-Acc", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-1", "_parent": { "$ref": "Rel-Cust-Acc" }, "reference": { "$ref": "Ent-CUSTOMER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-2", "_parent": { "$ref": "Rel-Cust-Acc" }, "reference": { "$ref": "Ent-ACCOUNT" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Cust-Tx", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "performs", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-3", "_parent": { "$ref": "Rel-Cust-Tx" }, "reference": { "$ref": "Ent-CUSTOMER" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-4", "_parent": { "$ref": "Rel-Cust-Tx" }, "reference": { "$ref": "Ent-TRANSACTION" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Cust-1", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "CustomerID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Cust-2", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "FirstName" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-3", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "LastName" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-4", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "DOB" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-5", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "Address" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-6", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "PhoneNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-7", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-8", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "AadharNo" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-9", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "PANNo" },
+                { "_type": "ERDColumn", "_id": "Col-Cust-10", "_parent": { "$ref": "Ent-CUSTOMER" }, "name": "CustomerType" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-ACCOUNT", "_parent": { "$ref": "ERDDataModel-1" }, "name": "ACCOUNT",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Acc-Tx", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "records", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-5", "_parent": { "$ref": "Rel-Acc-Tx" }, "reference": { "$ref": "Ent-ACCOUNT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-6", "_parent": { "$ref": "Rel-Acc-Tx" }, "reference": { "$ref": "Ent-TRANSACTION" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Acc-Card", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "has", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-7", "_parent": { "$ref": "Rel-Acc-Card" }, "reference": { "$ref": "Ent-ACCOUNT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-8", "_parent": { "$ref": "Rel-Acc-Card" }, "reference": { "$ref": "Ent-CARD" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Acc-Loan", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "applies for", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-9", "_parent": { "$ref": "Rel-Acc-Loan" }, "reference": { "$ref": "Ent-ACCOUNT" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-10", "_parent": { "$ref": "Rel-Acc-Loan" }, "reference": { "$ref": "Ent-LOAN" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Acc-1", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "AccountID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Acc-2", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "AccountNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Acc-3", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "AccountType (Savings/Current/FD)" },
+                { "_type": "ERDColumn", "_id": "Col-Acc-4", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "Balance" },
+                { "_type": "ERDColumn", "_id": "Col-Acc-5", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "OpenDate" },
+                { "_type": "ERDColumn", "_id": "Col-Acc-6", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Acc-7", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "CustomerID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Acc-8", "_parent": { "$ref": "Ent-ACCOUNT" }, "name": "BranchID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-BRANCH", "_parent": { "$ref": "ERDDataModel-1" }, "name": "BRANCH",
+              "ownedElements": [
+                { "_type": "ERDRelationship", "_id": "Rel-Branch-Acc", "_parent": { "$ref": "Ent-BRANCH" }, "name": "maintained at", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-11", "_parent": { "$ref": "Rel-Branch-Acc" }, "reference": { "$ref": "Ent-BRANCH" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-12", "_parent": { "$ref": "Rel-Branch-Acc" }, "reference": { "$ref": "Ent-ACCOUNT" }, "cardinality": "0..*" } },
+                { "_type": "ERDRelationship", "_id": "Rel-Branch-Emp", "_parent": { "$ref": "Ent-BRANCH" }, "name": "works at", "end1": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-13", "_parent": { "$ref": "Rel-Branch-Emp" }, "reference": { "$ref": "Ent-BRANCH" }, "cardinality": "1" }, "end2": { "_type": "ERDRelationshipEnd", "_id": "RelEnd-14", "_parent": { "$ref": "Rel-Branch-Emp" }, "reference": { "$ref": "Ent-EMPLOYEE" }, "cardinality": "0..*" } }
+              ],
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Branch-1", "_parent": { "$ref": "Ent-BRANCH" }, "name": "BranchID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Branch-2", "_parent": { "$ref": "Ent-BRANCH" }, "name": "BranchName" },
+                { "_type": "ERDColumn", "_id": "Col-Branch-3", "_parent": { "$ref": "Ent-BRANCH" }, "name": "Address" },
+                { "_type": "ERDColumn", "_id": "Col-Branch-4", "_parent": { "$ref": "Ent-BRANCH" }, "name": "City" },
+                { "_type": "ERDColumn", "_id": "Col-Branch-5", "_parent": { "$ref": "Ent-BRANCH" }, "name": "IFSCCode" },
+                { "_type": "ERDColumn", "_id": "Col-Branch-6", "_parent": { "$ref": "Ent-BRANCH" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Branch-7", "_parent": { "$ref": "Ent-BRANCH" }, "name": "ManagerName" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-TRANSACTION", "_parent": { "$ref": "ERDDataModel-1" }, "name": "TRANSACTION",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Tx-1", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "TransactionID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Tx-2", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "TransactionDate" },
+                { "_type": "ERDColumn", "_id": "Col-Tx-3", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "TransactionType (Deposit/Withdrawal/Transfer/Payment)" },
+                { "_type": "ERDColumn", "_id": "Col-Tx-4", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "Amount" },
+                { "_type": "ERDColumn", "_id": "Col-Tx-5", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "Description" },
+                { "_type": "ERDColumn", "_id": "Col-Tx-6", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "AccountID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Tx-7", "_parent": { "$ref": "Ent-TRANSACTION" }, "name": "PerformedAt (BranchID)" }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-CARD", "_parent": { "$ref": "ERDDataModel-1" }, "name": "CARD",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Card-1", "_parent": { "$ref": "Ent-CARD" }, "name": "CardID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Card-2", "_parent": { "$ref": "Ent-CARD" }, "name": "CardNumber" },
+                { "_type": "ERDColumn", "_id": "Col-Card-3", "_parent": { "$ref": "Ent-CARD" }, "name": "CardType (Debit/Credit)" },
+                { "_type": "ERDColumn", "_id": "Col-Card-4", "_parent": { "$ref": "Ent-CARD" }, "name": "IssueDate" },
+                { "_type": "ERDColumn", "_id": "Col-Card-5", "_parent": { "$ref": "Ent-CARD" }, "name": "ExpiryDate" },
+                { "_type": "ERDColumn", "_id": "Col-Card-6", "_parent": { "$ref": "Ent-CARD" }, "name": "CVV" },
+                { "_type": "ERDColumn", "_id": "Col-Card-7", "_parent": { "$ref": "Ent-CARD" }, "name": "PINHash" },
+                { "_type": "ERDColumn", "_id": "Col-Card-8", "_parent": { "$ref": "Ent-CARD" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Card-9", "_parent": { "$ref": "Ent-CARD" }, "name": "AccountID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-LOAN", "_parent": { "$ref": "ERDDataModel-1" }, "name": "LOAN",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Loan-1", "_parent": { "$ref": "Ent-LOAN" }, "name": "LoanID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Loan-2", "_parent": { "$ref": "Ent-LOAN" }, "name": "LoanType (Home/Car/Personal/Education)" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-3", "_parent": { "$ref": "Ent-LOAN" }, "name": "Amount" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-4", "_parent": { "$ref": "Ent-LOAN" }, "name": "InterestRate" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-5", "_parent": { "$ref": "Ent-LOAN" }, "name": "StartDate" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-6", "_parent": { "$ref": "Ent-LOAN" }, "name": "EndDate" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-7", "_parent": { "$ref": "Ent-LOAN" }, "name": "Status" },
+                { "_type": "ERDColumn", "_id": "Col-Loan-8", "_parent": { "$ref": "Ent-LOAN" }, "name": "AccountID", "foreignKey": true }
+              ]
+            },
+            {
+              "_type": "ERDEntity", "_id": "Ent-EMPLOYEE", "_parent": { "$ref": "ERDDataModel-1" }, "name": "EMPLOYEE",
+              "columns": [
+                { "_type": "ERDColumn", "_id": "Col-Emp-1", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "EmployeeID", "primaryKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Emp-2", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Name" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-3", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Designation" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-4", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Email" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-5", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Phone" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-6", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "BranchID", "foreignKey": true },
+                { "_type": "ERDColumn", "_id": "Col-Emp-7", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Username" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-8", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "PasswordHash" },
+                { "_type": "ERDColumn", "_id": "Col-Emp-9", "_parent": { "$ref": "Ent-EMPLOYEE" }, "name": "Status" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

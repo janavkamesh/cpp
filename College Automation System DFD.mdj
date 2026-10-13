@@ -1,0 +1,241 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "College Information System DFD Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "DFDDataFlowModel",
+          "_id": "DFD-Model-1",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Flow Model",
+          "ownedElements": [
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L0",
+              "_parent": { "$ref": "DFD-Model-1" },
+              "name": "Level 0 (Context Diagram)",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Stud", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Stud" }, "left": 50, "top": 170, "width": 120, "height": 120 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Fac", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Fac" }, "left": 750, "top": 170, "width": 120, "height": 120 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Admin", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Admin" }, "left": 400, "top": 450, "width": 120, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L0-Sys", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Sys" }, "left": 370, "top": 170, "width": 180, "height": 120 },
+                
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S1" }, "tail": { "$ref": "V-L0-Stud" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "170:190;370:190" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S2" }, "tail": { "$ref": "V-L0-Stud" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "170:210;370:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S3", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S3" }, "tail": { "$ref": "V-L0-Stud" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "170:230;370:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S4", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S4" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Stud" }, "lineStyle": 2, "points": "370:250;170:250" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S5", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S5" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Stud" }, "lineStyle": 2, "points": "370:270;170:270" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-F1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-F1" }, "tail": { "$ref": "V-L0-Fac" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "750:190;550:190" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-F2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-F2" }, "tail": { "$ref": "V-L0-Fac" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "750:210;550:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-F3", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-F3" }, "tail": { "$ref": "V-L0-Fac" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "750:230;550:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-F4", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-F4" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Fac" }, "lineStyle": 2, "points": "550:250;750:250" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-F5", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-F5" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Fac" }, "lineStyle": 2, "points": "550:270;750:270" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-A1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-A1" }, "tail": { "$ref": "V-L0-Admin" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "420:450;420:290" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-A2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-A2" }, "tail": { "$ref": "V-L0-Admin" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "450:450;450:290" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-A3", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-A3" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Admin" }, "lineStyle": 2, "points": "480:290;480:450" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-A4", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-A4" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Admin" }, "lineStyle": 2, "points": "500:290;500:450" }
+              ]
+            },
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L1",
+              "_parent": { "$ref": "DFD-Model-1" },
+              "name": "Level 1 DFD",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Stud", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Stud" }, "left": 30, "top": 50, "width": 140, "height": 150 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Fac", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Fac" }, "left": 30, "top": 440, "width": 140, "height": 80 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Admin", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Admin" }, "left": 30, "top": 570, "width": 140, "height": 80 },
+                
+                { "_type": "DFDProcessView", "_id": "V-L1-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P1" }, "left": 350, "top": 50, "width": 120, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P2" }, "left": 350, "top": 180, "width": 120, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P3" }, "left": 350, "top": 310, "width": 120, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P4" }, "left": 350, "top": 440, "width": 120, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P5" }, "left": 350, "top": 570, "width": 120, "height": 80 },
+                
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D1" }, "left": 650, "top": 65, "width": 150, "height": 50 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D2" }, "left": 650, "top": 195, "width": 150, "height": 50 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D3" }, "left": 650, "top": 325, "width": 150, "height": 50 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D4" }, "left": 650, "top": 455, "width": 150, "height": 50 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D5" }, "left": 650, "top": 585, "width": 150, "height": 50 },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S1" }, "tail": { "$ref": "V-L1-Stud" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "170:70;350:70" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S2" }, "tail": { "$ref": "V-L1-Stud" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "170:90;350:90" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S3" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-Stud" }, "lineStyle": 2, "points": "350:110;170:110" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S4" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-Stud" }, "lineStyle": 2, "points": "350:125;170:125" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S5" }, "tail": { "$ref": "V-L1-Stud" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "170:140;250:140;250:200;350:200" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S6", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S6" }, "tail": { "$ref": "V-L1-Stud" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "170:155;230:155;230:220;350:220" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S7", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S7" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-Stud" }, "lineStyle": 2, "points": "350:240;210:240;210:165;170:165" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S8", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S8" }, "tail": { "$ref": "V-L1-Stud" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "170:175;200:175;200:325;350:325" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-S9", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-S9" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-Stud" }, "lineStyle": 2, "points": "350:350;180:350;180:185;170:185" },
+                
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-F1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-F1" }, "tail": { "$ref": "V-L1-Fac" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "170:460;350:460" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-F2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-F2" }, "tail": { "$ref": "V-L1-Fac" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "170:480;350:480" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-F3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-F3" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-Fac" }, "lineStyle": 2, "points": "350:500;170:500" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-A1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-A1" }, "tail": { "$ref": "V-L1-Admin" }, "head": { "$ref": "V-L1-P5" }, "lineStyle": 2, "points": "170:590;350:590" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-A2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-A2" }, "tail": { "$ref": "V-L1-Admin" }, "head": { "$ref": "V-L1-P5" }, "lineStyle": 2, "points": "170:610;350:610" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-A3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-A3" }, "tail": { "$ref": "V-L1-P5" }, "head": { "$ref": "V-L1-Admin" }, "lineStyle": 2, "points": "350:630;170:630" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-P1-D1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P1-D1" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-D1" }, "lineStyle": 2, "points": "470:80;650:80" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-D1-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-D1-P1" }, "tail": { "$ref": "V-L1-D1" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "650:100;470:100" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P2-D2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P2-D2" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-D2" }, "lineStyle": 2, "points": "470:210;650:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-D2-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-D2-P2" }, "tail": { "$ref": "V-L1-D2" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "650:230;470:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P3-D3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P3-D3" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-D3" }, "lineStyle": 2, "points": "470:340;650:340" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-D3-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-D3-P3" }, "tail": { "$ref": "V-L1-D3" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "650:360;470:360" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P4-D4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P4-D4" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-D4" }, "lineStyle": 2, "points": "470:470;650:470" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-D4-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-D4-P4" }, "tail": { "$ref": "V-L1-D4" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "650:490;470:490" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P5-D5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P5-D5" }, "tail": { "$ref": "V-L1-P5" }, "head": { "$ref": "V-L1-D5" }, "lineStyle": 2, "points": "470:600;650:600" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-D5-P5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-D5-P5" }, "tail": { "$ref": "V-L1-D5" }, "head": { "$ref": "V-L1-P5" }, "lineStyle": 2, "points": "650:620;470:620" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-P1-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P1-P2" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "410:130;410:180" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P2-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P2-P3" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "410:260;410:310" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P3-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P3-P4" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "410:390;410:440" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-P4-P5", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-P4-P5" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-P5" }, "lineStyle": 2, "points": "410:520;410:570" }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Stud", "_parent": { "$ref": "DFD-Model-1" }, "name": "Student",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-S1", "_parent": { "$ref": "L0-Stud" }, "name": "Login / Registration", "source": { "$ref": "L0-Stud" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S2", "_parent": { "$ref": "L0-Stud" }, "name": "Course Enquiry", "source": { "$ref": "L0-Stud" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S3", "_parent": { "$ref": "L0-Stud" }, "name": "View Results", "source": { "$ref": "L0-Stud" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Fac", "_parent": { "$ref": "DFD-Model-1" }, "name": "Faculty",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-F1", "_parent": { "$ref": "L0-Fac" }, "name": "Login / Update Profile", "source": { "$ref": "L0-Fac" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-F2", "_parent": { "$ref": "L0-Fac" }, "name": "Enter Marks", "source": { "$ref": "L0-Fac" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-F3", "_parent": { "$ref": "L0-Fac" }, "name": "View Class Details", "source": { "$ref": "L0-Fac" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Admin", "_parent": { "$ref": "DFD-Model-1" }, "name": "Administrator",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-A1", "_parent": { "$ref": "L0-Admin" }, "name": "Manage Data", "source": { "$ref": "L0-Admin" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-A2", "_parent": { "$ref": "L0-Admin" }, "name": "System Settings", "source": { "$ref": "L0-Admin" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L0-Sys", "_parent": { "$ref": "DFD-Model-1" }, "name": "0.0 College Information System",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-S4", "_parent": { "$ref": "L0-Sys" }, "name": "Course Details", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S5", "_parent": { "$ref": "L0-Sys" }, "name": "Timetable / Academic Records", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-F4", "_parent": { "$ref": "L0-Sys" }, "name": "Class Schedule", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Fac" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-F5", "_parent": { "$ref": "L0-Sys" }, "name": "Student Info / Reports", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Fac" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-A3", "_parent": { "$ref": "L0-Sys" }, "name": "Confirmation", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Admin" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-A4", "_parent": { "$ref": "L0-Sys" }, "name": "Reports", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Admin" } }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Stud", "_parent": { "$ref": "DFD-Model-1" }, "name": "Student",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-S1", "_parent": { "$ref": "L1-Stud" }, "name": "Registration Details", "source": { "$ref": "L1-Stud" }, "target": { "$ref": "L1-P1" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-S2", "_parent": { "$ref": "L1-Stud" }, "name": "Login Credentials", "source": { "$ref": "L1-Stud" }, "target": { "$ref": "L1-P1" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-S5", "_parent": { "$ref": "L1-Stud" }, "name": "Course Enquiry", "source": { "$ref": "L1-Stud" }, "target": { "$ref": "L1-P2" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-S6", "_parent": { "$ref": "L1-Stud" }, "name": "Course Registration", "source": { "$ref": "L1-Stud" }, "target": { "$ref": "L1-P2" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-S8", "_parent": { "$ref": "L1-Stud" }, "name": "View Results / Attendance", "source": { "$ref": "L1-Stud" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Fac", "_parent": { "$ref": "DFD-Model-1" }, "name": "Faculty",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-F1", "_parent": { "$ref": "L1-Fac" }, "name": "Login / Update Profile", "source": { "$ref": "L1-Fac" }, "target": { "$ref": "L1-P4" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-F2", "_parent": { "$ref": "L1-Fac" }, "name": "Enter Marks", "source": { "$ref": "L1-Fac" }, "target": { "$ref": "L1-P4" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Admin", "_parent": { "$ref": "DFD-Model-1" }, "name": "Administrator",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-A1", "_parent": { "$ref": "L1-Admin" }, "name": "Manage Data", "source": { "$ref": "L1-Admin" }, "target": { "$ref": "L1-P5" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-A2", "_parent": { "$ref": "L1-Admin" }, "name": "System Settings", "source": { "$ref": "L1-Admin" }, "target": { "$ref": "L1-P5" } }
+              ]
+            },
+
+            {
+              "_type": "DFDProcess", "_id": "L1-P1", "_parent": { "$ref": "DFD-Model-1" }, "name": "1.0 Student Management",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-S3", "_parent": { "$ref": "L1-P1" }, "name": "Registration Confirmation", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-S4", "_parent": { "$ref": "L1-P1" }, "name": "Student Profile", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-P1-D1", "_parent": { "$ref": "L1-P1" }, "name": "Store Student Data", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-D1" } },
+                { "_type": "DFDDataFlow", "_id": "F-P1-P2", "_parent": { "$ref": "L1-P1" }, "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-P2" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P2", "_parent": { "$ref": "DFD-Model-1" }, "name": "2.0 Course Management",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-S7", "_parent": { "$ref": "L1-P2" }, "name": "Course Details / Enrolled", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-P2-D2", "_parent": { "$ref": "L1-P2" }, "name": "Store Course Data", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-D2" } },
+                { "_type": "DFDDataFlow", "_id": "F-P2-P3", "_parent": { "$ref": "L1-P2" }, "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P3", "_parent": { "$ref": "DFD-Model-1" }, "name": "3.0 Academic Management",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-S9", "_parent": { "$ref": "L1-P3" }, "name": "Results / Attendance Info", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-Stud" } },
+                { "_type": "DFDDataFlow", "_id": "F-P3-D3", "_parent": { "$ref": "L1-P3" }, "name": "Store Academic Records", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-D3" } },
+                { "_type": "DFDDataFlow", "_id": "F-P3-P4", "_parent": { "$ref": "L1-P3" }, "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-P4" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P4", "_parent": { "$ref": "DFD-Model-1" }, "name": "4.0 Faculty Management",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-F3", "_parent": { "$ref": "L1-P4" }, "name": "Class Schedule / Details", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-Fac" } },
+                { "_type": "DFDDataFlow", "_id": "F-P4-D4", "_parent": { "$ref": "L1-P4" }, "name": "Store Faculty Data", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-D4" } },
+                { "_type": "DFDDataFlow", "_id": "F-P4-P5", "_parent": { "$ref": "L1-P4" }, "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-P5" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P5", "_parent": { "$ref": "DFD-Model-1" }, "name": "5.0 Administration",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-A3", "_parent": { "$ref": "L1-P5" }, "name": "Reports / Acknowledgement", "source": { "$ref": "L1-P5" }, "target": { "$ref": "L1-Admin" } },
+                { "_type": "DFDDataFlow", "_id": "F-P5-D5", "_parent": { "$ref": "L1-P5" }, "name": "Store Admin Data", "source": { "$ref": "L1-P5" }, "target": { "$ref": "L1-D5" } }
+              ]
+            },
+
+            {
+              "_type": "DFDDataStore", "_id": "L1-D1", "_parent": { "$ref": "DFD-Model-1" }, "name": "D1   Student Data",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-D1-P1", "_parent": { "$ref": "L1-D1" }, "name": "Retrieve Student Data", "source": { "$ref": "L1-D1" }, "target": { "$ref": "L1-P1" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D2", "_parent": { "$ref": "DFD-Model-1" }, "name": "D2   Course Data",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-D2-P2", "_parent": { "$ref": "L1-D2" }, "name": "Retrieve Course Data", "source": { "$ref": "L1-D2" }, "target": { "$ref": "L1-P2" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D3", "_parent": { "$ref": "DFD-Model-1" }, "name": "D3   Academic Data",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-D3-P3", "_parent": { "$ref": "L1-D3" }, "name": "Retrieve Academic Records", "source": { "$ref": "L1-D3" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D4", "_parent": { "$ref": "DFD-Model-1" }, "name": "D4   Faculty Data",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-D4-P4", "_parent": { "$ref": "L1-D4" }, "name": "Retrieve Faculty Data", "source": { "$ref": "L1-D4" }, "target": { "$ref": "L1-P4" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D5", "_parent": { "$ref": "DFD-Model-1" }, "name": "D5   Admin Data",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-D5-P5", "_parent": { "$ref": "L1-D5" }, "name": "Retrieve Admin Data", "source": { "$ref": "L1-D5" }, "target": { "$ref": "L1-P5" } }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

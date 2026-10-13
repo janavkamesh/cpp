@@ -1,0 +1,199 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Online Ticket Reservation System DFD",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "DFDDataFlowModel",
+          "_id": "DFD-Model-Ticket",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Data Flow Model",
+          "ownedElements": [
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L0",
+              "_parent": { "$ref": "DFD-Model-Ticket" },
+              "name": "Level 0 (Context Diagram)",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-Cust", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Cust" }, "left": 50, "top": 180, "width": 140, "height": 100 },
+                { "_type": "DFDProcessView", "_id": "V-L0-Sys", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-Sys" }, "left": 350, "top": 160, "width": 180, "height": 140 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L0-PG", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-PG" }, "left": 680, "top": 190, "width": 140, "height": 80 },
+                { "_type": "DFDDataStoreView", "_id": "V-L0-DB", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "L0-DB" }, "left": 365, "top": 450, "width": 150, "height": 60 },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-C1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-C1" }, "tail": { "$ref": "V-L0-Cust" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "190:180;350:180" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-C2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-C2" }, "tail": { "$ref": "V-L0-Cust" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "190:200;350:200" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-C3", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-C3" }, "tail": { "$ref": "V-L0-Cust" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "190:220;350:220" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S1" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Cust" }, "lineStyle": 2, "points": "350:240;190:240" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S2" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Cust" }, "lineStyle": 2, "points": "350:260;190:260" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-S3", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-S3" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-Cust" }, "lineStyle": 2, "points": "350:280;190:280" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SP1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SP1" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-PG" }, "lineStyle": 2, "points": "530:200;680:200" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SP2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SP2" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-PG" }, "lineStyle": 2, "points": "530:220;680:220" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-PS1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-PS1" }, "tail": { "$ref": "V-L0-PG" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "680:240;530:240" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-PS2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-PS2" }, "tail": { "$ref": "V-L0-PG" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "680:260;530:260" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SD1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SD1" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-DB" }, "lineStyle": 2, "points": "410:300;410:450" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-SD2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-SD2" }, "tail": { "$ref": "V-L0-Sys" }, "head": { "$ref": "V-L0-DB" }, "lineStyle": 2, "points": "430:300;430:450" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-DS1", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-DS1" }, "tail": { "$ref": "V-L0-DB" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "450:450;450:300" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L0-DS2", "_parent": { "$ref": "DFD-Diag-L0" }, "model": { "$ref": "F-L0-DS2" }, "tail": { "$ref": "V-L0-DB" }, "head": { "$ref": "V-L0-Sys" }, "lineStyle": 2, "points": "470:450;470:300" }
+              ]
+            },
+            {
+              "_type": "DFDDiagram",
+              "_id": "DFD-Diag-L1",
+              "_parent": { "$ref": "DFD-Model-Ticket" },
+              "name": "Level 1 DFD",
+              "ownedViews": [
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-Cust", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-Cust" }, "left": 40, "top": 100, "width": 140, "height": 400 },
+                
+                { "_type": "DFDProcessView", "_id": "V-L1-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P1" }, "left": 350, "top": 50, "width": 180, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P2" }, "left": 350, "top": 180, "width": 180, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P3" }, "left": 350, "top": 310, "width": 180, "height": 80 },
+                { "_type": "DFDProcessView", "_id": "V-L1-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-P4" }, "left": 350, "top": 440, "width": 180, "height": 80 },
+                
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D1" }, "left": 680, "top": 65, "width": 160, "height": 50 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D2" }, "left": 680, "top": 195, "width": 160, "height": 50 },
+                { "_type": "DFDExternalEntityView", "_id": "V-L1-PG", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-PG" }, "left": 680, "top": 310, "width": 160, "height": 80 },
+                { "_type": "DFDDataStoreView", "_id": "V-L1-D3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "L1-D3" }, "left": 680, "top": 455, "width": 160, "height": 50 },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P1a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P1a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "180:70;350:70" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P1b", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P1b" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "180:90;350:90" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P1-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P1-C1" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:110;180:110" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P2a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P2a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "180:190;350:190" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P2b", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P2b" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "180:210;350:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P2-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P2-C1" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:230;180:230" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P2-C2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P2-C2" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:250;180:250" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P3a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P3a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "180:330;350:330" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P3-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P3-C1" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:370;180:370" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-C-P4a", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-C-P4a" }, "tail": { "$ref": "V-L1-Cust" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "180:450;350:450" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P4-C1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P4-C1" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-Cust" }, "lineStyle": 2, "points": "350:490;180:490" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P1-D1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P1-D1" }, "tail": { "$ref": "V-L1-P1" }, "head": { "$ref": "V-L1-D1" }, "lineStyle": 2, "points": "530:80;680:80" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-D1-P1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-D1-P1" }, "tail": { "$ref": "V-L1-D1" }, "head": { "$ref": "V-L1-P1" }, "lineStyle": 2, "points": "680:100;530:100" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P2-D2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P2-D2" }, "tail": { "$ref": "V-L1-P2" }, "head": { "$ref": "V-L1-D2" }, "lineStyle": 2, "points": "530:210;680:210" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-D2-P2", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-D2-P2" }, "tail": { "$ref": "V-L1-D2" }, "head": { "$ref": "V-L1-P2" }, "lineStyle": 2, "points": "680:230;530:230" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P3-PG1", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P3-PG1" }, "tail": { "$ref": "V-L1-P3" }, "head": { "$ref": "V-L1-PG" }, "lineStyle": 2, "points": "530:340;680:340" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-PG-P31", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-PG-P31" }, "tail": { "$ref": "V-L1-PG" }, "head": { "$ref": "V-L1-P3" }, "lineStyle": 2, "points": "680:370;530:370" },
+
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-P4-D3", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-P4-D3" }, "tail": { "$ref": "V-L1-P4" }, "head": { "$ref": "V-L1-D3" }, "lineStyle": 2, "points": "530:470;680:470" },
+                { "_type": "DFDDataFlowView", "_id": "V-F-L1-D3-P4", "_parent": { "$ref": "DFD-Diag-L1" }, "model": { "$ref": "F-L1-D3-P4" }, "tail": { "$ref": "V-L1-D3" }, "head": { "$ref": "V-L1-P4" }, "lineStyle": 2, "points": "680:490;530:490" }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-Cust", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "Customer\n(Passenger)",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-C1", "_parent": { "$ref": "L0-Cust" }, "name": "Search Details", "source": { "$ref": "L0-Cust" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-C2", "_parent": { "$ref": "L0-Cust" }, "name": "Booking Request", "source": { "$ref": "L0-Cust" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-C3", "_parent": { "$ref": "L0-Cust" }, "name": "Payment Info", "source": { "$ref": "L0-Cust" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L0-Sys", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "0\nOnline Ticket\nReservation\nSystem",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-S1", "_parent": { "$ref": "L0-Sys" }, "name": "Ticket / E-Ticket", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S2", "_parent": { "$ref": "L0-Sys" }, "name": "Booking Confirmation", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-S3", "_parent": { "$ref": "L0-Sys" }, "name": "Cancellation Info", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SP1", "_parent": { "$ref": "L0-Sys" }, "name": "Payment Request", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-PG" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SP2", "_parent": { "$ref": "L0-Sys" }, "name": "(Card/UPI/Wallet Details)", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-PG" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SD1", "_parent": { "$ref": "L0-Sys" }, "name": "Ticket Info", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-DB" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-SD2", "_parent": { "$ref": "L0-Sys" }, "name": "Availability Data", "source": { "$ref": "L0-Sys" }, "target": { "$ref": "L0-DB" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L0-PG", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "Payment Gateway\n(External System)",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-PS1", "_parent": { "$ref": "L0-PG" }, "name": "Payment Response", "source": { "$ref": "L0-PG" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-PS2", "_parent": { "$ref": "L0-PG" }, "name": "(Success/Failure)", "source": { "$ref": "L0-PG" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L0-DB", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "Ticket Database",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L0-DS1", "_parent": { "$ref": "L0-DB" }, "name": "Seat Availability", "source": { "$ref": "L0-DB" }, "target": { "$ref": "L0-Sys" } },
+                { "_type": "DFDDataFlow", "_id": "F-L0-DS2", "_parent": { "$ref": "L0-DB" }, "name": "Booking Records", "source": { "$ref": "L0-DB" }, "target": { "$ref": "L0-Sys" } }
+              ]
+            },
+
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-Cust", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "Customer\n(Passenger)",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P1a", "_parent": { "$ref": "L1-Cust" }, "name": "Search Criteria", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P1" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P1b", "_parent": { "$ref": "L1-Cust" }, "name": "(From, To, Date)", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P1" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P2a", "_parent": { "$ref": "L1-Cust" }, "name": "Booking Request", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P2" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P2b", "_parent": { "$ref": "L1-Cust" }, "name": "(Selected Schedule, Passenger Details)", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P2" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P3a", "_parent": { "$ref": "L1-Cust" }, "name": "Payment Information", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P3" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-C-P4a", "_parent": { "$ref": "L1-Cust" }, "name": "Confirmation Request", "source": { "$ref": "L1-Cust" }, "target": { "$ref": "L1-P4" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P1", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "1.0\nSearch Flights/Trains/\nBuses",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P1-C1", "_parent": { "$ref": "L1-P1" }, "name": "Search Results", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P1-D1", "_parent": { "$ref": "L1-P1" }, "name": "Retrieve Schedules", "source": { "$ref": "L1-P1" }, "target": { "$ref": "L1-D1" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P2", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "2.0\nCheck Availability\n& Calculate Fare",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P2-C1", "_parent": { "$ref": "L1-P2" }, "name": "Fare Details", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P2-C2", "_parent": { "$ref": "L1-P2" }, "name": "Seat Availability", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P2-D2", "_parent": { "$ref": "L1-P2" }, "name": "Check Seats/Availability", "source": { "$ref": "L1-P2" }, "target": { "$ref": "L1-D2" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P3", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "3.0\nProcess Payment",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P3-C1", "_parent": { "$ref": "L1-P3" }, "name": "Payment Status", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P3-PG1", "_parent": { "$ref": "L1-P3" }, "name": "Payment Request", "source": { "$ref": "L1-P3" }, "target": { "$ref": "L1-PG" } }
+              ]
+            },
+            {
+              "_type": "DFDProcess", "_id": "L1-P4", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "4.0\nGenerate Ticket",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-P4-C1", "_parent": { "$ref": "L1-P4" }, "name": "E-Ticket / Confirmation", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-Cust" } },
+                { "_type": "DFDDataFlow", "_id": "F-L1-P4-D3", "_parent": { "$ref": "L1-P4" }, "name": "Save Booking Details", "source": { "$ref": "L1-P4" }, "target": { "$ref": "L1-D3" } }
+              ]
+            },
+
+            {
+              "_type": "DFDDataStore", "_id": "L1-D1", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "D1\nSchedule Database",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-D1-P1", "_parent": { "$ref": "L1-D1" }, "name": "Schedule Details", "source": { "$ref": "L1-D1" }, "target": { "$ref": "L1-P1" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D2", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "D2\nAvailability Database",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-D2-P2", "_parent": { "$ref": "L1-D2" }, "name": "Availability Info & Fare", "source": { "$ref": "L1-D2" }, "target": { "$ref": "L1-P2" } }
+              ]
+            },
+            {
+              "_type": "DFDExternalEntity", "_id": "L1-PG", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "Payment Gateway\n(External System)",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-PG-P31", "_parent": { "$ref": "L1-PG" }, "name": "Payment Response", "source": { "$ref": "L1-PG" }, "target": { "$ref": "L1-P3" } }
+              ]
+            },
+            {
+              "_type": "DFDDataStore", "_id": "L1-D3", "_parent": { "$ref": "DFD-Model-Ticket" }, "name": "D3\nBooking Database",
+              "ownedElements": [
+                { "_type": "DFDDataFlow", "_id": "F-L1-D3-P4", "_parent": { "$ref": "L1-D3" }, "name": "Booking Record", "source": { "$ref": "L1-D3" }, "target": { "$ref": "L1-P4" } }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAFF+h6SjaM2Hec=",
+  "name": "Railway Ticket Reservation System Project",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAFF+qBWK6M3Z8Y=",
+      "_parent": { "$ref": "AAAAAAFF+h6SjaM2Hec=" },
+      "name": "Model",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "ClassDiagram-Railway",
+          "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" },
+          "name": "Railway Ticket Reservation System - UML Class Diagram",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView", "_id": "View-Admin", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Admin" }, "left": 50, "top": 50, "width": 220, "height": 120
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Passenger", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Passenger" }, "left": 450, "top": 50, "width": 230, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Reservation", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Reservation" }, "left": 450, "top": 280, "width": 230, "height": 130
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Ticket", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Ticket" }, "left": 750, "top": 350, "width": 200, "height": 130
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Train", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Train" }, "left": 50, "top": 380, "width": 220, "height": 150
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Seat", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Seat" }, "left": 350, "top": 580, "width": 180, "height": 130
+            },
+            {
+              "_type": "UMLClassView", "_id": "View-Payment", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "C-Payment" }, "left": 650, "top": 580, "width": 220, "height": 130
+            },
+
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Admin-Train", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Admin-Train" }, "tail": { "$ref": "View-Admin" }, "head": { "$ref": "View-Train" }, "lineStyle": 2, "points": "160:170;160:380" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Pass-Res", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Pass-Res" }, "tail": { "$ref": "View-Passenger" }, "head": { "$ref": "View-Reservation" }, "lineStyle": 2, "points": "565:200;565:280" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Res-Train", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Res-Train" }, "tail": { "$ref": "View-Reservation" }, "head": { "$ref": "View-Train" }, "lineStyle": 2, "points": "450:345;330:345;330:455;270:455" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Res-Ticket", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Res-Ticket" }, "tail": { "$ref": "View-Reservation" }, "head": { "$ref": "View-Ticket" }, "lineStyle": 2, "points": "680:345;715:345;715:415;750:415" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Train-Seat", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Train-Seat" }, "tail": { "$ref": "View-Train" }, "head": { "$ref": "View-Seat" }, "lineStyle": 2, "points": "160:530;160:645;350:645" },
+            { "_type": "UMLAssociationView", "_id": "View-Assoc-Seat-Pay", "_parent": { "$ref": "ClassDiagram-Railway" }, "model": { "$ref": "Assoc-Seat-Pay" }, "tail": { "$ref": "View-Seat" }, "head": { "$ref": "View-Payment" }, "lineStyle": 2, "points": "530:645;650:645" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Admin", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Admin",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Admin-Train", "_parent": { "$ref": "C-Admin" }, "name": "manages", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-ATr", "_parent": { "$ref": "Assoc-Admin-Train" }, "reference": { "$ref": "C-Admin" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-ATr", "_parent": { "$ref": "Assoc-Admin-Train" }, "reference": { "$ref": "C-Train" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Ad1", "_parent": { "$ref": "C-Admin" }, "name": "adminId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Ad2", "_parent": { "$ref": "C-Admin" }, "name": "name", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Ad1", "_parent": { "$ref": "C-Admin" }, "name": "addTrain", "parameters": [{ "_type": "UMLParameter", "_id": "P-Ad1", "name": "train" }], "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Ad2", "_parent": { "$ref": "C-Admin" }, "name": "updateSchedule", "parameters": [{ "_type": "UMLParameter", "_id": "P-Ad2", "name": "train" }], "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Passenger", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Passenger",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Pass-Res", "_parent": { "$ref": "C-Passenger" }, "name": "makes", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-PR", "_parent": { "$ref": "Assoc-Pass-Res" }, "reference": { "$ref": "C-Passenger" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-PR", "_parent": { "$ref": "Assoc-Pass-Res" }, "reference": { "$ref": "C-Reservation" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Pa1", "_parent": { "$ref": "C-Passenger" }, "name": "passengerId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Pa2", "_parent": { "$ref": "C-Passenger" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Pa3", "_parent": { "$ref": "C-Passenger" }, "name": "age", "type": "Integer", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Pa4", "_parent": { "$ref": "C-Passenger" }, "name": "contact", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Pa1", "_parent": { "$ref": "C-Passenger" }, "name": "makeReservation", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Pa2", "_parent": { "$ref": "C-Passenger" }, "name": "cancelReservation", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Reservation", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Reservation",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Res-Train", "_parent": { "$ref": "C-Reservation" }, "name": "for", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-RT", "_parent": { "$ref": "Assoc-Res-Train" }, "reference": { "$ref": "C-Reservation" }, "multiplicity": "1..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-RT", "_parent": { "$ref": "Assoc-Res-Train" }, "reference": { "$ref": "C-Train" }, "multiplicity": "1..*" } },
+            { "_type": "UMLAssociation", "_id": "Assoc-Res-Ticket", "_parent": { "$ref": "C-Reservation" }, "name": "generates", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-RTi", "_parent": { "$ref": "Assoc-Res-Ticket" }, "reference": { "$ref": "C-Reservation" }, "multiplicity": "1" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-RTi", "_parent": { "$ref": "Assoc-Res-Ticket" }, "reference": { "$ref": "C-Ticket" }, "multiplicity": "1" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Re1", "_parent": { "$ref": "C-Reservation" }, "name": "reservationId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Re2", "_parent": { "$ref": "C-Reservation" }, "name": "journeyDate", "type": "Date", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Re3", "_parent": { "$ref": "C-Reservation" }, "name": "status", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Re1", "_parent": { "$ref": "C-Reservation" }, "name": "confirm", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Re2", "_parent": { "$ref": "C-Reservation" }, "name": "cancel", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Ticket", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Ticket",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Ti1", "_parent": { "$ref": "C-Ticket" }, "name": "ticketId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Ti2", "_parent": { "$ref": "C-Ticket" }, "name": "pnrNumber", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Ti3", "_parent": { "$ref": "C-Ticket" }, "name": "fare", "type": "Double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Ti4", "_parent": { "$ref": "C-Ticket" }, "name": "classType", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Ti1", "_parent": { "$ref": "C-Ticket" }, "name": "printTicket", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Train", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Train",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Train-Seat", "_parent": { "$ref": "C-Train" }, "name": "has", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-TrS", "_parent": { "$ref": "Assoc-Train-Seat" }, "reference": { "$ref": "C-Train" }, "multiplicity": "1..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-TrS", "_parent": { "$ref": "Assoc-Train-Seat" }, "reference": { "$ref": "C-Seat" }, "multiplicity": "1..*" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Tr1", "_parent": { "$ref": "C-Train" }, "name": "trainNo", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Tr2", "_parent": { "$ref": "C-Train" }, "name": "name", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Tr3", "_parent": { "$ref": "C-Train" }, "name": "source", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Tr4", "_parent": { "$ref": "C-Train" }, "name": "destination", "type": "String", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Tr1", "_parent": { "$ref": "C-Train" }, "name": "checkAvailability", "parameters": [{ "_type": "UMLParameter", "_id": "P-Tr1", "name": "date" }], "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Seat", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Seat",
+          "ownedElements": [
+            { "_type": "UMLAssociation", "_id": "Assoc-Seat-Pay", "_parent": { "$ref": "C-Seat" }, "name": "paid via", "end1": { "_type": "UMLAssociationEnd", "_id": "E1-SP", "_parent": { "$ref": "Assoc-Seat-Pay" }, "reference": { "$ref": "C-Seat" }, "multiplicity": "1..*" }, "end2": { "_type": "UMLAssociationEnd", "_id": "E2-SP", "_parent": { "$ref": "Assoc-Seat-Pay" }, "reference": { "$ref": "C-Payment" }, "multiplicity": "1" } }
+          ],
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Se1", "_parent": { "$ref": "C-Seat" }, "name": "seatNo", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Se2", "_parent": { "$ref": "C-Seat" }, "name": "coachType", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Se3", "_parent": { "$ref": "C-Seat" }, "name": "isBooked", "type": "Boolean", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Se1", "_parent": { "$ref": "C-Seat" }, "name": "reserveSeat", "visibility": "public" },
+            { "_type": "UMLOperation", "_id": "O-Se2", "_parent": { "$ref": "C-Seat" }, "name": "releaseSeat", "visibility": "public" }
+          ]
+        },
+        {
+          "_type": "UMLClass", "_id": "C-Payment", "_parent": { "$ref": "AAAAAAFF+qBWK6M3Z8Y=" }, "name": "Payment",
+          "attributes": [
+            { "_type": "UMLAttribute", "_id": "A-Py1", "_parent": { "$ref": "C-Payment" }, "name": "paymentId", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Py2", "_parent": { "$ref": "C-Payment" }, "name": "amount", "type": "Double", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Py3", "_parent": { "$ref": "C-Payment" }, "name": "mode", "type": "String", "visibility": "private" },
+            { "_type": "UMLAttribute", "_id": "A-Py4", "_parent": { "$ref": "C-Payment" }, "name": "paymentDate", "type": "Date", "visibility": "private" }
+          ],
+          "operations": [
+            { "_type": "UMLOperation", "_id": "O-Py1", "_parent": { "$ref": "C-Payment" }, "name": "processPayment", "visibility": "public" }
+          ]
+        }
+      ]
+    }
+  ]
+}
